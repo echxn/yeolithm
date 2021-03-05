@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<head>
+
+    <!--  
+        ==========================================================
+ 
+ 
+        Theme 39 - Melosweet
+        ( https://yeoli-thm.tumblr.com/melosweet )
+        Version 1.1
+        Released: 12/08/2019
+        Updated: 05/03/2021
+        Created by: yeoli-thm
+        Website: yeoli-thm.tumblr.com
+        Support: yeoli-thm.tumblr.com
+       
+        Copyright (c) 2021. Powered by Tumblr.        
+         
+         
+        ==========================================================
+         
+         
+        // Terms Of Use:
+           - Do not steal or use as base codes.
+           - Do not repost or redistribute codes.
+           - Feel free to customize theme for your personal use
+             but please do not remove the credits.
+         
+         
+        ==========================================================
+    -->
+
+    <meta charset="utf-8">
+    <title>{Title}</title>
+    {block:Description}
+    <meta name="description" content="{MetaDescription}">
+    {/block:Description}
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    
+    {block:Hidden}
+    <meta name="image:Background image" content=""/>
+    <meta name="image:Sidebar image" content=""/>
+
+    <meta name="color:Accent" content="#bee1b3"/>    
+    <meta name="color:Box shadow" content="#e1e1e1"/>
+    <meta name="color:Background" content="#f8f9fa"/>
+    <meta name="color:Body text" content="#aaaaaa"/>
+    <meta name="color:Bold text" content="#7e9f74"/>
+    <meta name="color:Italic text" content="#d4e29f"/>
+    <meta name="color:Links" content="#ffd786"/>
+    <meta name="color:Links hover" content="#444444"/>
+    <meta name="color:Headings" content="#222222"/>
+    <meta name="color:Bullet points" content="#444444"/>
+    <meta name="color:Blockquote border" content="#bee1b3"/>
+    <meta name="color:Post bg" content="#ffffff"/>
+    <meta name="color:Post inner bg" content="#f8f9fa"/>
+    <meta name="color:Post usernames" content="#444444"/>
+    <meta name="color:Post quote" content="#222222"/>
+    <meta name="color:Permalink hover" content="#444444"/>
+    <meta name="color:Permalink hover icons" content="#bee1b3"/>
+    <meta name="color:Tags hover" content="#444444"/>
+    <meta name="color:Date tab bg" content="#222222"/>
+    <meta name="color:Date tab text" content="#f1f1f1"/>
+    <meta name="color:Sidebar bg" content="#ffffff"/>
+    <meta name="color:Blog title" content="#d4e29f"/>
+    <meta name="color:Blog description" content="#aaaaaa"/>
+    <meta name="color:Menubar bg" content="#bee1b3"/>
+    <meta name="color:Menubar text" content="#ffffff"/>
+    <meta name="color:Menubar fruit" content="#7e9f74"/>
+    <meta name="color:Tooltip bg" content="#222222"/>
+    <meta name="color:Tooltip text" content="#f1f1f1"/>
+    
+    <meta name="select:Sidebar image display" content="displayfruit" title="fruit"/>
+    <meta name="select:Sidebar image display" content="displaycircle" title="circle"/>
+    <meta name="select:Sidebar image display" content="displaysquare" title="square"/>
+    <meta name="select:Sidebar image display" content="displaynone" title="none"/>
+    
+    <meta name="select:Fruit" content="fruitapple" title="apple"/>
+    <meta name="select:Fruit" content="fruitbanana" title="banana"/>
+    <meta name="select:Fruit" content="fruitcherry" title="cherry"/>
+    <meta name="select:Fruit" content="fruitkiwi" title="kiwi"/>
+    <meta name="select:Fruit" content="fruitmango" title="mango"/>
+    <meta name="select:Fruit" content="fruitorange" title="orange"/>
+    <meta name="select:Fruit" content="fruitstrawberry" title="strawberry"/>
+    <meta name="select:Fruit" content="fruitwatermelon" title="watermelon"/>
+    
+    <meta name="if:Background image repeat" content="1"/>
+    <meta name="if:Background image stretch" content="0"/>
+    
+    <meta name="if:Show post captions" content="1"/>
+    <meta name="if:Show post tags" content="1"/>
+    
+    <meta name="if:Enable google fonts" content="1"/>
+
+    <meta name="text:Body font family" content="PT Sans"/>
+    <meta name="text:Body font size" content="12px"/>
+    <meta name="text:Sub font family" content="PT Sans Narrow"/>
+    <meta name="text:Sub font size" content="10px"/>
+    <meta name="text:Headings font family" content="IBM Plex Sans"/>
+    
+    <meta name="text:Post width" content="450px"/>
+    <meta name="text:Photoset gutter size" content="2px"/>
+    
+    <meta name="text:Link 1 label" content="Link 1"/>
+    <meta name="text:Link 1 URL" content=""/>
+    <meta name="text:Link 2 label" content="Link 2"/>
+    <meta name="text:Link 2 URL" content=""/>
+    <meta name="text:Link 3 label" content="Link 3"/>
+    <meta name="text:Link 3 URL" content=""/>
+    
+    <meta name="text:Background image position" content="center center"/>
+    {/block:Hidden}
+    
+    {block:IfEnableGoogleFonts}
+    <link href="https://fonts.googleapis.com/css?family={text:Body font family}:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family={text:Sub font family}:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family={text:Headings font family}:400,700" rel="stylesheet">
+    {/block:IfEnableGoogleFonts}
+    
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link href="https://static.tumblr.com/kmw8hta/oSwpvpnik/feather.css" rel="stylesheet">
+    <link href="https://static.tumblr.com/kmw8hta/p0jpgtbdt/tooltipster_main.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/echxn/yeolithm@master/src/css/thm39.css" rel="stylesheet">
+    
+    <!-- HTML5 Shiv -->
+    <!--[if lt IE 9]>
+        <script src="https://static.tumblr.com/hriofhd/Qj0m8pn7q/html5shiv.js"></script>
+    <![endif]-->
+    
+
+    <style>
+    
+    
+    :root {
+        
+    /* BACKGROUND IMAGE: */
+        --backgroundImage: url('{image:Background image}');
+        --backgroundAttachment: initial;
+        --backgroundPosition: {text:Background image position};
+        {block:IfBackgroundImageRepeat}--backgroundRepeat: repeat;{/block:IfBackgroundImageRepeat}
+        {block:IfNotBackgroundImageRepeat}--backgroundRepeat: no-repeat;{/block:IfNotBackgroundImageRepeat}
+        {block:IfBackgroundImageStretch}--backgroundSize: cover;{/block:IfBackgroundImageStretch}
+        {block:IfNotBackgroundImageStretch}--backgroundSize: auto;{/block:IfNotBackgroundImageStretch}
+        
+    /* SIDEBAR IMAGE: */
+        --sidebarImage: url('{image:Sidebar image}');
+        
+    /* POST WIDTH: */
+        --postWidth: {text:Post width};
+        --photosetGutterSize: {text:Photoset gutter size};
+        
+    /* COLORS: */
+        --accentColor: {color:Accent};
+        --boxShadowColor: {color:Box shadow};
+        --backgroundColor: {color:Background};
+        --bodyTextColor: {color:Body text};
+        --boldTextColor: {color:Bold text};
+        --italicTextColor: {color:Italic text};
+        --linksColor: {color:Links};
+        --linksHoverColor: {color:Links hover};
+        --headingsColor: {color:Headings};
+        --bulletPointsColor: {color:Bullet points};
+        --blockquoteBorderColor: {color:Blockquote border};
+        --postBgColor: {color:Post bg};
+        --postInnerBgColor: {color:Post inner bg};
+        --postUsernamesColor: {color:Post usernames};
+        --postQuoteColor: {color:Post quote};
+        --audioPlayerButtonColor: {color:Headings};
+        --tagsHoverColor: {color:Tags hover};
+        --permalinkHoverColor: {color:Permalink hover};
+        --permalinkHoverIconsColor: {color:Permalink hover icons};
+        --dateTabBgColor: {color:Date tab bg};
+        --dateTabTextColor: {color:Date tab text};
+        --sidebarBgColor: {color:Sidebar bg};
+        --blogTitleColor: {color:Blog title};
+        --blogDescriptionColor: {color:Blog description};
+        --menubarBgColor: {color:Menubar bg};
+        --menubarTextColor: {color:Menubar text};
+        --menubarFruitColor: {color:Menubar fruit};
+        --tooltipBgColor: {color:Tooltip bg};
+        --tooltipTextColor: {color:Tooltip text};
+        
+    }
+    
+    /* FONTS: */
+    body {
+        font-family: {text:Body font family}, sans-serif;
+        font-size: {text:Body font size}; 
+    }
+    
+    .subfont,
+    .notes .action a,
+    a.more_notes_link,
+    .tooltipster-content{
+        font-family: {text:Sub font family}, sans-serif;
+        font-size: {text:Sub font size};
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: {text:Headings font family}, sans-serif;
+    }
+    
+    
+    {CustomCSS}        
+    </style>
+</head>
+<body class="{select:Fruit}">
+
+    <input type="checkbox" id="menu"/>
+    
+    
+    <!-- MENUBAR: -->
+    <section id="menubar">
+        <div id="fruitbg"></div>
+        <label for="menu" class="menubutton">
+            <span class="fx fx-menu"></span>
+        </label>
+        <div class="menuinner">
+            <header class="menu_head">
+                <div class="blogicon">
+                    <img src="{PortraitURL-96}" alt=""/>
+                </div>
+                <a href="/" class="blogname">{Name}</a>
+                <a href="https://www.tumblr.com/follow/{Name}" class="follow subfont">{lang:Follow}</a>
+            </header>
+            <nav id="nav" class="subfont">
+                <ul class="resetlist">
+                    <li class="focused"><a href="/">Home</a></li>
+                    {block:AskEnabled}<li><a href="/ask">Ask</a></li>{/block:AskEnabled}
+                    {block:SubmissionsEnabled}<li><a href="/submit">Submit</a></li>{/block:SubmissionsEnabled}
+                    <li><a href="/archive">Archive</a></li>
+                    {block:HasPages}
+                    {block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
+                    {/block:HasPages}
+                    {block:IfLink1Label}<li><a href="{text:Link 1 URL}">{text:Link 1 label}</a></li>{/block:IfLink1Label}
+                    {block:IfLink2Label}<li><a href="{text:Link 2 URL}">{text:Link 2 label}</a></li>{/block:IfLink2Label}
+                    {block:IfLink3Label}<li><a href="{text:Link 3 URL}">{text:Link 3 label}</a></li>{/block:IfLink3Label}
+                    <li class="slider"></li>
+                </ul>
+            </nav>
+        </div>
+    </section> 
+    <!-- end of menubar -->
+    
+    
+    <!-- SITE CONTAINER: -->
+    <div id="container">
+        
+        
+        <!-- SIDEBAR: -->
+        <aside id="sidebar" class="{select:Sidebar image display}">
+            <div class="sidebar_image">
+                <div class="fruiti"></div>
+            </div>
+            <div class="blog_bio">
+                <h1 class="blog_title"><a href="/">{Title}</a></h1>
+                {block:Description}
+                    <div class="blog_desc">{Description}</div>
+                {/block:Description}
+            </div>
+            {block:Pagination}
+                <div class="pagination">
+                    {block:PreviousPage}
+                        <a href="{PreviousPage}" class="prev">
+                            <span class="fx fx-arrow-left"></span>
+                        </a>
+                    {/block:PreviousPage}
+                    {block:NextPage}
+                        <a href="{NextPage}" class="next">
+                            <span class="fx fx-arrow-right"></span>
+                        </a>
+                    {/block:NextPage}
+                </div>
+            {/block:Pagination}
+        </aside>
+        <!-- end of sidebar: -->
+        
+        
+        <!-- MAIN BODY: -->
+        <div id="mainbody">
+            <div class="wrapper">
+            
+                <main id="main">
+                    {block:Posts inlineMediaWidth="900" inlineNestedMediaWidth="900"}
+                        <div class="post_item">
+                            <div class="post_frame">
+                            
+                                {block:Date}
+                                    <a href="{Permalink}" class="datetab">
+                                        <span class="date subfont">{DayOfMonthWithZero}{MonthNumberWithZero}{ShortYear}</span>
+                                    </a>
+                                {/block:Date}
+                                
+                                <article class="post_article">
+                            
+                                    {block:Date}
+                                        <header class="article_head">
+                                            {block:NotReblog}
+                                                <div class="postumblelog fruiticon">
+                                                    <span class="username subfont">{PostBlogName}</span>
+                                                </div>
+                                            {/block:NotReblog}
+                                            {block:RebloggedFrom}
+                                                <div class="postumblelog fruiticon">
+                                                    <a href="{ReblogRootURL}" {Target} class="username subfont">{ReblogRootName}</a>
+                                                </div>
+                                                <div class="reblogicon">
+                                                    <a href="{ReblogParentURL}" class="tooltip" title="Reblogged via {ReblogParentName}" {Target}>
+                                                        <img src="{ReblogParentPortraitURL-96}"/>
+                                                    </a>
+                                                    <a href="{ReblogRootURL}" class="tooltip" title="Posted by {ReblogRootName}" {Target}>
+                                                        <img src="{ReblogRootPortraitURL-96}"/>
+                                                    </a>
+                                                </div>
+                                            {/block:RebloggedFrom}
+                                        </header>
+                                    {/block:Date}
+                                    
+                                    <div class="entry">
+                                    
+                                        {block:Text}
+                                            {block:Title}<h1>{Title}</h1>{/block:Title}
+                                            {block:NotReblog}
+                                                {Body}
+                                            {/block:NotReblog}
+                                            {block:RebloggedFrom}
+                                                {block:Reblogs}
+                                                    <div class="postumblelog fruiticon"{block:isOriginalEntry} style="display:none"{/block:isOriginalEntry}>
+                                                    {block:HasPermalink}<a href="{Permalink}" {Target} class="username subfont">{Username}</a>{/block:HasPermalink}
+                                                    {block:HasNoPermalink}<span class="username subfont{block:IsDeactivated} deactivated{/block:IsDeactivated}">{Username}</span>{/block:HasNoPermalink}
+                                                    </div>
+                                                    {Body}
+                                                {/block:Reblogs}
+                                            {/block:RebloggedFrom}
+                                        {/block:Text}
+                                        
+                                        {block:Photo}
+                                            <figure>
+                                                <div class="post_media">
+                                                    <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" style="display:block;width:100%"/>
+                                                </div>
+                                                {block:Caption}
+                                                    <figcaption {block:IndexPage}{block:IfNotShowPostCaptions} style="display:none"{/block:IfNotShowPostCaptions}{/block:IndexPage}>
+                                                        {block:NotReblog}
+                                                            {Caption}
+                                                        {/block:NotReblog}
+                                                        {block:RebloggedFrom}
+                                                            {block:Reblogs}
+                                                                <div class="postumblelog fruiticon"{block:isOriginalEntry} style="display:none"{/block:isOriginalEntry}>
+                                                                    {block:HasPermalink}<a href="{Permalink}" {Target} class="username subfont">{Username}</a>{/block:HasPermalink}
+                                                                    {block:HasNoPermalink}<span class="username subfont{block:IsDeactivated} deactivated{/block:IsDeactivated}">{Username}</span>{/block:HasNoPermalink}
+                                                                </div>
+                                                                {Body}
+                                                            {/block:Reblogs}
+                                                        {/block:RebloggedFrom}
+                                                    </figcaption>
+                                                {/block:Caption}
+                                            </figure>
+                                        {/block:Photo}
+                                        
+                                        {block:Photoset}
+                                            <figure>
+                                                <div class="post_media">
+                                                    <div class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">
+                                                        {block:Photos}
+                                                            <div class="photo-data">
+                                                                <div class="pxu-photo">
+                                                                    <img src="{PhotoURL-500}" alt="{PhotoAlt}" width="{PhotoWidth-500}" height="{PhotoHeight-500}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}"/>
+                                                                </div>
+                                                                <a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}"></a>
+                                                            </div>
+                                                        {/block:Photos}
+                                                    </div>
+                                                </div>
+                                                {block:Caption}
+                                                    <figcaption {block:IndexPage}{block:IfNotShowPostCaptions} style="display:none"{/block:IfNotShowPostCaptions}{/block:IndexPage}>
+                                                        {block:NotReblog}
+                                                            {Caption}
+                                                        {/block:NotReblog}
+                                                        {block:RebloggedFrom}
+                                                            {block:Reblogs}
+                                                                <div class="postumblelog fruiticon"{block:isOriginalEntry} style="display:none"{/block:isOriginalEntry}>
+                                                                    {block:HasPermalink}<a href="{Permalink}" {Target} class="username subfont">{Username}</a>{/block:HasPermalink}
+                                                                    {block:HasNoPermalink}<span class="username subfont{block:IsDeactivated} deactivated{/block:IsDeactivated}">{Username}</span>{/block:HasNoPermalink}
+                                                                </div>
+                                                                {Body}
+                                                            {/block:Reblogs}
+                                                        {/block:RebloggedFrom}
+                                                    </figcaption>
+                                                {/block:Caption}
+                                            </figure>
+                                        {/block:Photoset}
+                                        
+                                        {block:Video}
+                                            <figure>
+                                                <div class="post_media">
+                                                    <div class="tmblr-embed">
+                                                        {VideoEmbed-500}
+                                                    </div>
+                                                </div>
+                                                {block:Caption}
+                                                    <figcaption {block:IndexPage}{block:IfNotShowPostCaptions} style="display:none"{/block:IfNotShowPostCaptions}{/block:IndexPage}>
+                                                        {block:NotReblog}
+                                                            {Caption}
+                                                        {/block:NotReblog}
+                                                        {block:RebloggedFrom}
+                                                            {block:Reblogs}
+                                                                <div class="postumblelog fruiticon"{block:isOriginalEntry} style="display:none"{/block:isOriginalEntry}>
+                                                                    {block:HasPermalink}<a href="{Permalink}" {Target} class="username subfont">{Username}</a>{/block:HasPermalink}
+                                                                    {block:HasNoPermalink}<span class="username subfont{block:IsDeactivated} deactivated{/block:IsDeactivated}">{Username}</span>{/block:HasNoPermalink}
+                                                                </div>
+                                                                {Body}
+                                                            {/block:Reblogs}
+                                                        {/block:RebloggedFrom}
+                                                    </figcaption>
+                                                {/block:Caption}
+                                            </figure>
+                                        {/block:Video}
+                                        
+                                        {block:Quote}
+                                            <div class="quote">
+                                                <span>{Quote}</span>
+                                            </div>
+                                            <div class="quote_source">{Source}</div>
+                                        {/block:Quote}
+                                        
+                                        {block:Link}
+                                            <a href="{URL}" class="link_box">
+                                                <h1 class="link">{Name}</h1>
+                                                {block:Thumbnail} 
+                                                    <div class="link_thumbnail" style="background-image:url('{Thumbnail-HighRes}')"></div>
+                                                {/block:Thumbnail}
+                                            </a>
+                                            {block:Description}
+                                                <div class="link_description" {block:IndexPage}{block:IfNotShowPostCaptions} style="display:none"{/block:IfNotShowPostCaptions}{/block:IndexPage}>
+                                                    {block:NotReblog}
+                                                        {Description}
+                                                    {/block:NotReblog}
+                                                    {block:RebloggedFrom}
+                                                        {block:Reblogs}
+                                                            <div class="postumblelog fruiticon"{block:isOriginalEntry} style="display:none"{/block:isOriginalEntry}>
+                                                            {block:HasPermalink}<a href="{Permalink}" {Target} class="username subfont">{Username}</a>{/block:HasPermalink}
+                                                            {block:HasNoPermalink}<span class="username subfont{block:IsDeactivated} deactivated{/block:IsDeactivated}">{Username}</span>{/block:HasNoPermalink}
+                                                            </div>
+                                                            {Body}
+                                                        {/block:Reblogs}
+                                                    {/block:RebloggedFrom}
+                                                </div>
+                                            {/block:Description}
+                                        {/block:Link}
+                                        
+                                        {block:Chat}
+                                            {block:Title}<h1>{Title}</h1>{/block:Title}
+                                            <ul class="chat resetlist">
+                                                {block:Lines}
+                                                    <li>{block:Label}<b>{Label}</b>{/block:Label} {Line}</li>
+                                                {/block:Lines}
+                                            </ul>
+                                        {/block:Chat}
+                                        
+                                        {block:Audio}
+                                            <figure>
+                                                {block:AudioEmbed} 
+                                                    <div class="post_media">
+                                                        <div class="tmblr-embed">
+                                                            {AudioEmbed}
+                                                        </div>
+                                                    </div>
+                                                {/block:AudioEmbed}
+                                                {block:AudioPlayer}
+                                                    <div class="audio_box">
+                                                        <div class="playerbutton">
+                                                            {AudioPlayer}
+                                                        </div>
+                                                        <div class="audio_info">
+                                                            {block:TrackName}<h3 class="trackname">{TrackName}</h3>{/block:TrackName}
+                                                            {block:Artist}<span class="artist">{Artist}</span>{/block:Artist}
+                                                        </div>
+                                                        {block:AlbumArt}
+                                                            <div class="albumart" style="background-image:url('{AlbumArtURL}')"></div>
+                                                        {/block:AlbumArt}
+                                                    </div>
+                                                {/block:AudioPlayer}
+                                                {block:Caption}
+                                                    <figcaption {block:IndexPage}{block:IfNotShowPostCaptions} style="display:none"{/block:IfNotShowPostCaptions}{/block:IndexPage}>
+                                                        {block:NotReblog}
+                                                            {Caption}
+                                                        {/block:NotReblog}
+                                                        {block:RebloggedFrom}
+                                                            {block:Reblogs}
+                                                                <div class="postumblelog fruiticon"{block:isOriginalEntry} style="display:none"{/block:isOriginalEntry}>
+                                                                    {block:HasPermalink}<a href="{Permalink}" {Target} class="username subfont">{Username}</a>{/block:HasPermalink}
+                                                                    {block:HasNoPermalink}<span class="username subfont{block:IsDeactivated} deactivated{/block:IsDeactivated}">{Username}</span>{/block:HasNoPermalink}
+                                                                </div>
+                                                                {Body}
+                                                            {/block:Reblogs}
+                                                        {/block:RebloggedFrom}
+                                                    </figcaption>
+                                                {/block:Caption}
+                                            </figure>
+                                        {/block:Audio}
+                                        
+                                        {block:Answer}
+                                            <ul class="answer resetlist">
+                                                <li>
+                                                    <div class="answer_entry">
+                                                        <div class="sender subfont">{Asker} sent:</div>
+                                                        <div class="question">{Question}</div>
+                                                    </div>
+                                                    <div class="answer_avatar">
+                                                        <img src="{AskerPortraitURL-96}" alt=""/>
+                                                    </div>
+                                                </li>
+                                                {block:Answerer}
+                                                    <li>
+                                                        <div class="answer_entry">
+                                                            <div class="sender subfont">{Answerer} replied:</div>
+                                                            <div class="question">{Answer}</div>
+                                                        </div>
+                                                        <div class="answer_avatar">
+                                                            <img src="{AnswererPortraitURL-96}" alt=""/>
+                                                        </div>
+                                                    </li>
+                                                {/block:Answerer}
+                                            </ul>
+                                            {block:NotReblog}
+                                                {Answer}
+                                            {/block:NotReblog}
+                                            {block:RebloggedFrom}
+                                                {block:Reblogs}
+                                                    <div class="postumblelog fruiticon"{block:isOriginalEntry} style="display:none"{/block:isOriginalEntry}>
+                                                    {block:HasPermalink}<a href="{Permalink}" {Target} class="username subfont">{Username}</a>{/block:HasPermalink}
+                                                    {block:HasNoPermalink}<span class="username subfont{block:IsDeactivated} deactivated{/block:IsDeactivated}">{Username}</span>{/block:HasNoPermalink}
+                                                    </div>
+                                                    {Body}
+                                                {/block:Reblogs}
+                                            {/block:RebloggedFrom}
+                                        {/block:Answer}
+                                    
+                                    </div>
+                                    
+                                    {block:HasTags}
+                                        <div class="tags"{block:IndexPage}{block:IfNotShowPostTags} style="display:none"{/block:IfNotShowPostTags}{/block:IndexPage}>
+                                            {block:Tags}<a href="{TagURL}">#{Tag}</a>{/block:Tags}
+                                        </div>
+                                    {/block:HasTags}
+                                    
+                                    {block:Date}
+                                        <footer class="article_foot">
+                                            <ul class="permalink resetlist subfont">
+                                                <li class="like_btn">
+                                                    {LikeButton color="white" size="100"}
+                                                    <span class="fx fx-heart"></span>
+                                                    <span class="permalabel">like</span>
+                                                </li>
+                                                <li>
+                                                    <a href="{Permalink}">
+                                                        <span class="fx fx-clock"></span>
+                                                        <span class="permalabel timeago">{Timestamp}</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{Permalink}">
+                                                        <span class="fx fx-eye"></span>
+                                                        <span class="permalabel notecount">{NoteCount}</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{ReblogURL}"{block:IndexPage} target="_blank"{/block:IndexPage}>
+                                                        <span class="fx fx-repeat"></span>
+                                                        <span class="permalabel">reblog</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    {/block:Date}
+                                    
+                                </article>
+                            </div>
+                            
+                            {block:PostNotes}
+                                {PostNotes-64}
+                            {/block:PostNotes}
+                            
+                        </div>
+                    {/block:Posts}
+                </main>
+                
+                <div class="credit">
+                    <span>© <a href="https://yeoli-thm.tumblr.com/melosweet" target="_blank">Melosweet Theme</a> by <a href="https://yeoli-thm.tumblr.com" target="_blank">yeoli-thm</a>.</span> <span>Powered by <a href="https://www.tumblr.com" target="_blank">Tumblr</a>.</span>
+                </div><!-- please do not remove credit -->
+            
+            </div>
+        </div>
+        <!-- end of main body -->
+        
+        
+        <!-- SCROLL TOP BUTTON: -->
+        <div id="scrolltop_box">
+            <div id="scrolltop"><span class="fx fx-arrow-up"></span></div>
+        </div>
+        <!-- end of scroll top button: -->
+        
+        
+    </div>
+    <!-- end of site container -->
+
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://static.tumblr.com/kmw8hta/1WKpaiuda/tooltipster.main.min.js"></script>
+    <script src="https://static.tumblr.com/kmw8hta/heppglaoh/tooltipster-discovery.min.js"></script>
+    <script src="https://static.tumblr.com/kmw8hta/rVKpb21vn/pxuphotoset.min.js"></script>
+    <script src="https://static.tumblr.com/i5s2zks/9Acok8oo2/bct-timeago.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/echxn/yeolithm@master/src/js/thm39.js"></script>
+    
+    
+    <!--   
+        ==========================================================
+        
+        
+        // Credits: 
+        
+        Feather Icons 
+        - github.com/feathericons/feather
+        - Copyright (c) 2013-2017 Cole Bemis
+        - Licensed under the MIT license
+        
+        Fruits & Vegetables Icons
+        - www.flaticon.com/packs/fruits-vegetables-5
+        - www.flaticon.com/authors/freepik
+        - Copyright (c) 2019 Freepik from www.flaticon.com
+        - Licensed under the free licensce (with attribution)
+        
+        PXU Photoset Extended
+        - github.com/pixelunion/Extended-Tumblr-Photoset
+        - Copyright (c) 2013 Pixel Union
+        - Licensed under the MIT license
+        
+        TimeAgo(); plugin
+        - bychloethemes.tumblr.com/plugins/timeago
+        - Copyright (c) 2017 Chloe Themes
+        - Licensed under the MIT license
+        
+        Tooltipster 
+        - github.com/iamceege/tooltipster
+        - Copyright (c) 2012,2016 Caleb Jacob and Louis Ameline
+        - Licensed under the MIT license
+        
+        
+        ==========================================================
+    --> 
+    
+    
+</body>
+</html>
