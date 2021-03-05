@@ -1,5 +1,5 @@
 /*
- * Theme 40 (Melosweet) by https://yeoli-thm.tumblr.com/
+ * Theme 40 by https://yeoli-thm.tumblr.com/
  * Copyright (c) 2021 yeoli-thm
  */
  
