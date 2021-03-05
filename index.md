@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+**Website:** [https://yeolithm.com](https://yeolithm.com)
 
-You can use the [editor on GitHub](https://github.com/echxn/yeolithm/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Feel free to use my tumblr themes and make minor modifications as you wish.
 
-### Markdown
+Premium themes are availabe at [https://payhip.com/yeolithemes](https://payhip.com/yeolithemes).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## How to install
 
-# Header 1
-## Header 2
-### Header 3
+1. Go to [https://www.tumblr.com/customize](https://www.tumblr.com/customize)
+2. Click on 'Edit HTML'
+3. Delete the existing code
+4. Copy the new theme code and paste it into the Tumblr HTML area
+5. Click on 'Update' then 'Save'.
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+## Terms of use
+For full terms please visit [https://yeolithm.com/terms](https://yeolithm.com/terms)
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/echxn/yeolithm/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Copyright © 2012 - 2021
