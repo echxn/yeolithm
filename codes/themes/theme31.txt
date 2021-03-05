@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<head>
+
+
+    <!--  
+        ==========================================================
+ 
+ 
+        Theme 31 ( https://yeolithmpreview-31.tumblr.com )
+        Version 1.3
+        Released: 20/09/2015
+        Updated: 05/03/2021
+        Created by: yeoli-thm
+        Website: yeoli-thm.tumblr.com
+        Support: yeoli-thm.tumblr.com
+       
+        Copyright (c) 2021. Powered by Tumblr.        
+         
+         
+        ==========================================================
+         
+         
+        // Terms Of Use:
+           - Do not steal or use as base codes.
+           - Do not repost or redistribute codes.
+           - Feel free to customize theme for your personal use
+             but please do not remove the credits.
+         
+         
+        ==========================================================
+        
+        
+        ** You can enable/disable tab panels in the theme options
+        
+        
+        ==========================================================
+    -->
+    
+    
+    <meta charset="utf-8">
+    <title>{Title}</title>
+    {block:Description}
+    <meta name="description" content="{MetaDescription}">
+    {/block:Description}
+    
+    {block:Hidden}
+    <meta name="image:Background image" content=""/>
+    <meta name="image:Sidebar image" content=""/>
+    
+    <meta name="color:Background" content="#ffffff"/>
+    <meta name="color:Borders" content="#d4d4d4"/>
+    <meta name="color:Body text" content="#999999"/>
+    <meta name="color:Bold text" content="#1e8177"/>
+    <meta name="color:Italic text" content="#f5c181"/>
+    <meta name="color:Headings" content="#000000"/>
+    <meta name="color:Links" content="#65c9c2"/>
+    <meta name="color:Links Hover" content="#000000"/>
+    <meta name="color:Bullet points" content="#000000"/>
+    <meta name="color:Post ask text" content="#999999"/>
+    <meta name="color:Post ask bg" content="#f7f8f9"/>
+    <meta name="color:Post audio text" content="#ffffff"/>
+    <meta name="color:Post audio bg" content="#000000"/>
+    <meta name="color:Post tags" content="#999999"/>
+    <meta name="color:Post tags hover" content="#000000"/>
+    <meta name="color:Post permalinks" content="#000000"/>
+    <meta name="color:Liked heart button" content="#ae4b33"/>
+    <meta name="color:Topbar bg" content="#000000"/>
+    <meta name="color:Blog title" content="#ffffff"/>
+    <meta name="color:Sidebar image bg" content="#ffeecf"/>
+    <meta name="color:Sidebar menu links" content="#000000"/>
+    <meta name="color:Sidebar menu links hover" content="#000000"/>
+    <meta name="color:Sidebar menu links hover bg" content="#f7f8f9"/>
+    <meta name="color:Tooltip text" content="#ffffff"/>
+    <meta name="color:Tooltip bg" content="#000000"/>
+    <meta name="color:Scrollbar" content="#f3f4f5"/>
+     
+    <meta name="select:Post width" content="threepx" title="300px"/>
+    <meta name="select:Post width" content="fourpx" title="400px"/>
+    <meta name="select:Post width" content="fivepx" title="500px"/>
+    
+    <meta name="if:Background image stretch" content="0"/>
+    <meta name="if:Background image repeat" content="0"/>
+    
+    <meta name="if:Show about tab" content="1"/>
+    <meta name="if:Show navigation tab" content="1"/>
+    <meta name="if:Show FAQ tab" content="1"/>
+    <meta name="if:Show blogroll tab" content="1"/>
+    
+    <meta name="if:Show post captions" content="1"/>
+    <meta name="if:Show post tags" content="1"/>
+    
+    <meta name="if:Enable larger icons" content="0"/>
+    <meta name="if:Enable google fonts" content="1"/>
+    
+    <meta name="text:Body font family" content="Open Sans"/>
+    <meta name="text:Body font size" content="11px"/>
+    
+    <meta name="text:Photoset gutter size" content="1px"/>
+    
+    <meta name="text:Background image position" content="bottom left"/>
+    {/block:Hidden}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    
+    {block:IfEnableGoogleFonts}
+    <link href="https://fonts.googleapis.com/css?family={text:Body font family}:400,400i,700,700i&display=swap" rel="stylesheet">
+    {/block:IfEnableGoogleFonts}
+    
+    <link href="https://static.tumblr.com/kmw8hta/w7Cq7rr0o/entypo.css" rel="stylesheet">
+    <link href="https://static.tumblr.com/kmw8hta/p0jpgtbdt/tooltipster_main.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/echxn/yeolithm@master/src/css/thm31.css" rel="stylesheet">
+
+    <!-- HTML5 Shiv -->
+    <!--[if lt IE 9]>
+        <script src="https://static.tumblr.com/hriofhd/Qj0m8pn7q/html5shiv.js"></script>
+    <![endif]-->
+    
+
+    <style>
+    
+    :root {
+        
+    /* FONTS: */
+        --bodyFontFamily: '{text:Body font family}';
+        --bodyFontSize: {text:Body font size};
+        
+        --subFontSize: 0.91em;
+        --subFontCasing: uppercase;
+        
+        --headingFontCasing: uppercase;
+        --headingFontWeight: bold;
+        
+    /* COLORS: */
+        --backgroundColor: {color:Background};
+        --bordersColor: {color:Borders};
+        --bodyTextColor: {color:Body text};
+        --boldTextColor: {color:Bold text};
+        --italicTextColor: {color:Italic text};
+        --headingsColor: {color:Headings};
+        --linksColor: {color:Links};
+        --linksHoverColor: {color:Links hover};
+        --bulletPointsColor: {color:Bullet points};
+        --postAskTextColor: {color:Post ask text};
+        --postAskBgColor: {color:Post ask bg};
+        --postAudioTextColor: {color:Post audio text};
+        --postAudioBgColor: {color:Post audio bg};
+        --postTagsColor: {color:Post tags};
+        --postTagsHoverColor: {color:Post tags hover};
+        --postPermalinksColor: {color:Post permalinks};
+        --likedHeartButtonColor: {color:Liked heart button};
+        --topbarBgColor: {color:Topbar bg};
+        --blogTitleColor: {color:Blog title};
+        --sidebarImageBgColor: {color:Sidebar image bg};
+        --sidebarMenuLinksColor: {color:Sidebar menu links};
+        --sidebarMenuLinksHoverColor: {color:Sidebar menu links hover};
+        --sidebarMenuLinksHoverBgColor: {color:Sidebar menu links hover bg};
+        --tooltipTextColor: {color:Tooltip text};
+        --tooltipBgColor: {color:Tooltip bg};
+        --scrollbarColor: {color:Scrollbar};
+        
+    /* BORDER STYLES: */
+        --borderWidth: 1px;
+        --borderStyle: dotted;
+        
+    /* POST WIDTH: */
+        --widthA: 300px;
+        --widthB: 400px;
+        --widthC: 500px;
+        
+        --photosetGutterSize: {text:Photoset gutter size};
+        
+    /*  BACKGROUND IMAGE:  */
+        --bgImageURL: url('{image:Background image}');
+        --bgImagePosition: {text:Background image position};
+        {block:IfBackgroundImageRepeat}
+        --bgImageRepeat: repeat;
+        {/block:IfBackgroundImageRepeat}
+        {block:IfNotBackgroundImageRepeat}
+        --bgImageRepeat: no-repeat;
+        {/block:IfNotBackgroundImageRepeat}
+        {block:IfBackgroundImageStretch}
+        --bgImageSize: cover;
+        {/block:IfBackgroundImageStretch}
+        {block:IfNotBackgroundImageStretch}
+        --bgImageSize: auto;
+        {/block:IfNotBackgroundImageStretch}
+        
+    }
+    
+    {CustomCSS}
+    </style>
+</head>
+<body class="{select:Post width}{block:IfEnableLargerIcons} larger-icons{/block:IfEnableLargerIcons}">
+
+
+
+    <!--**********************************************
+    
+    
+        - You can enable/disable tab panels in 
+          the theme options
+        
+        - Scroll down to edit the tabs panel contents
+    
+    
+        **********************************************-->
+    
+
+
+
+
+
+    <!-- TOPBAR: -->
+    <header id="topbar">
+        <a href="https://yeoli-thm.tumblr.com" class="credit tooltip" title="Theme" target="_blank"><span class="ent ent-cc-nd"></span></a>
+        <a href="/archive" class="archive tooltip" title="Archive"><span class="ent ent-clock"></span></a>
+        <a href="/" class="blogtitle"><h1>{Title}</h1></a>
+    </header>
+    <!-- end of topbar -->
+    
+    
+    
+    
+    
+    
+    <!-- SITE CONTAINER: -->
+    <div id="container">
+    
+    
+        <!-- (please do not edit/delete): -->
+        <input type="radio" name="accordion" id="blog__tab" checked/>
+        {block:AskEnabled}
+        <input type="radio" name="accordion" id="message__tab"/>
+        {/block:AskEnabled}
+        {block:IfShowAboutTab}
+        <input type="radio" name="accordion" id="about__tab"/>
+        {/block:IfShowAboutTab}
+        {block:IfShowNavigationTab}
+        <input type="radio" name="accordion" id="navigation__tab"/>
+        {/block:IfShowNavigationTab}
+        {block:IfShowFAQTab}
+        <input type="radio" name="accordion" id="faq__tab"/>
+        {/block:IfShowFAQTab}
+        {block:IfShowBlogrollTab}
+        <input type="radio" name="accordion" id="blogroll__tab"/>
+        {/block:IfShowBlogrollTab}
+        <!------>
+        
+        
+        
+        
+        
+        
+        <!-- SIDEBAR: -->
+        <aside id="sidebar">
+        
+            <!-- Sidebar Image: -->
+            <a href="/" class="sidebar_image"{block:IfSidebarImageImage} style="background-image:url('{image:Sidebar image}')"{/block:IfSidebarImageImage}></a>
+            
+            <!-- Menu Links (please do not edit/delete): -->
+            <nav id="menu">
+                    <label for="blog__tab" class="blog_tab_label">
+                        <span class="ent ent-leaf"></span>
+                        <span class="subfont">Blog</span>
+                    </label>
+                {block:AskEnabled}
+                    <label for="message__tab" class="message_tab_label">
+                        <span class="ent ent-mail"></span>
+                        <span class="subfont">Message</span>
+                    </label>
+                {/block:AskEnabled}
+                {block:IfShowAboutTab}
+                    <label for="about__tab" class="about_tab_label">
+                        <span class="ent ent-user"></span>
+                        <span class="subfont">About</span>
+                    </label>
+                {/block:IfShowAboutTab}
+                {block:IfShowNavigationTab}
+                    <label for="navigation__tab" class="navigation_tab_label">
+                        <span class="ent ent-layout"></span>
+                        <span class="subfont">Navigation</span>
+                    </label>
+                {/block:IfShowNavigationTab}
+                {block:IfShowFAQTab}
+                    <label for="faq__tab" class="faq_tab_label">
+                        <span class="ent ent-quote"></span>
+                        <span class="subfont">FAQ's</span>
+                    </label>
+                {/block:IfShowFAQTab}
+                {block:IfShowBlogrollTab}{block:Following}
+                    <label for="blogroll__tab" class="blogroll_tab_label">
+                        <span class="ent ent-star"></span>
+                        <span class="subfont">Blogroll</span>
+                    </label>
+                {/block:Following}{/block:IfShowBlogrollTab}
+            </nav>
+            <!-- end of menu links -->
+            
+        </aside>
+        <!-- end of sidebar -->
+        
+        
+        
+        
+        
+        
+        <!-- CONTENT BODY: -->
+        <div id="contentbody">
+        
+        
+        
+        
+        
+            
+            <!-- BLOG PANEL TAB (please do not edit/delete): -->
+            <main id="blog__panel" class="panel-width">
+                {block:Posts inlineMediaWidth="900" inlineNestedMediaWidth="900"}
+                    <article class="posts"{block:Date} id="{PostID}"{block:IndexPage}{block:NoteCount} data-notes-url="{PostNotesURL}"{/block:NoteCount}{/block:IndexPage}{/block:Date}>
+                    
+                        {block:ContentSource}
+                        <!-- {SourceURL}{block:SourceLogo}<img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />{/block:SourceLogo}{block:NoSourceLogo}{SourceLink}{/block:NoSourceLogo}-->
+                        {/block:ContentSource}
+                    
+                        {block:Text}
+                            {block:Title}<h1>{Title}</h1>{/block:Title}
+                            {block:NotReblog}
+                                {Body}
+                            {/block:NotReblog}
+                            {block:RebloggedFrom}
+                                {block:Reblogs}
+                                    <div class="reblog_trail_item">
+                                        <a{block:HasPermalink} href="{Permalink}" {Target}{/block:HasPermalink} class="tumblelog_username"{block:isOriginalEntry} style="display:none"{/block:IsOriginalEntry}{block:IsDeactivated} title="Deactivated"{/block:IsDeactivated}>
+                                            {Username}:
+                                        </a>
+                                        {Body}
+                                    </div>
+                                {/block:Reblogs}
+                            {/block:RebloggedFrom}
+                        {/block:Text}
+                        
+                        {block:Photo}
+                            <figure>
+                                <div class="media">
+                                    {block:IndexPage}<img src="{PhotoURL-HighRes}" style="display:block;width:100%"/>{/block:IndexPage}
+                                    {block:PermalinkPage}<a href="/image/{PostID}" {Target}><img src="{PhotoURL-HighRes}" style="display:block;width:100%"/></a>{/block:PermalinkPage}
+                                </div>
+                                {block:Caption}
+                                    <figcaption class="caption"{block:IndexPage}{block:IfNotShowPostCaptions} style="display:none"{/block:IfNotShowPostCaptions}{/block:IndexPage}>
+                                        {block:NotReblog}
+                                            {Caption}
+                                        {/block:NotReblog}
+                                        {block:RebloggedFrom}
+                                            {block:Reblogs}
+                                                <div class="reblog_trail_item">
+                                                    <a{block:HasPermalink} href="{Permalink}" {Target}{/block:HasPermalink} class="tumblelog_username"{block:isOriginalEntry} style="display:none"{/block:IsOriginalEntry}{block:IsDeactivated} title="Deactivated"{/block:IsDeactivated}>
+                                                        {Username}:
+                                                    </a>
+                                                    {Body}
+                                                </div>
+                                            {/block:Reblogs}
+                                        {/block:RebloggedFrom}
+                                    </figcaption>
+                                {/block:Caption}
+                            </figure>
+                        {/block:Photo}
+                        
+                        {block:Photoset}
+                            <figure>
+                                <div class="media">
+                                    <div class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">
+                                        {block:Photos}
+                                            <div class="photo-data">
+                                                <div class="pxu-photo">
+                                                    <img src="{PhotoURL-500}" alt="{PhotoAlt}" width="{PhotoWidth-500}" height="{PhotoHeight-500}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}"/>
+                                                </div>
+                                                <a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}"></a>
+                                            </div>
+                                        {/block:Photos}
+                                    </div>
+                                </div>
+                                {block:Caption}
+                                    <figcaption class="caption"{block:IndexPage}{block:IfNotShowPostCaptions} style="display:none"{/block:IfNotShowPostCaptions}{/block:IndexPage}>
+                                        {block:NotReblog}
+                                            {Caption}
+                                        {/block:NotReblog}
+                                        {block:RebloggedFrom}
+                                            {block:Reblogs}
+                                                <div class="reblog_trail_item">
+                                                    <a{block:HasPermalink} href="{Permalink}" {Target}{/block:HasPermalink} class="tumblelog_username"{block:isOriginalEntry} style="display:none"{/block:IsOriginalEntry}{block:IsDeactivated} title="Deactivated"{/block:IsDeactivated}>
+                                                        {Username}:
+                                                    </a>
+                                                    {Body}
+                                                </div>
+                                            {/block:Reblogs}
+                                        {/block:RebloggedFrom}
+                                    </figcaption>
+                                {/block:Caption}
+                            </figure>
+                        {/block:Photoset}
+                        
+                        {block:Video}
+                            <figure>
+                                <div class="tmblr-embed">
+                                    {VideoEmbed-500}
+                                </div>
+                                {block:Caption}
+                                    <figcaption class="caption"{block:IndexPage}{block:IfNotShowPostCaptions} style="display:none"{/block:IfNotShowPostCaptions}{/block:IndexPage}>
+                                        {block:NotReblog}
+                                            {Caption}
+                                        {/block:NotReblog}
+                                        {block:RebloggedFrom}
+                                            {block:Reblogs}
+                                                <div class="reblog_trail_item">
+                                                    <a{block:HasPermalink} href="{Permalink}" {Target}{/block:HasPermalink} class="tumblelog_username"{block:isOriginalEntry} style="display:none"{/block:IsOriginalEntry}{block:IsDeactivated} title="Deactivated"{/block:IsDeactivated}>
+                                                        {Username}:
+                                                    </a>
+                                                    {Body}
+                                                </div>
+                                            {/block:Reblogs}
+                                        {/block:RebloggedFrom}
+                                    </figcaption>
+                                {/block:Caption}
+                            </figure>
+                        {/block:Video}
+                        
+                        {block:Quote}
+                            <p class="quote">{Quote}</p>
+                            {block:Source}<p class="quote-source">- {Source}</p>{/block:Source}
+                        {/block:Quote}
+                        
+                        {block:Link}
+                            <h1 class="post-link"><a href="{URL}" {Target}>
+                                <span class="ent ent-link"></span>{Name}
+                            </a></h1>
+                            {block:Description}
+                                <div class="caption">
+                                    {block:NotReblog}
+                                        {Description}
+                                    {/block:NotReblog}
+                                    {block:RebloggedFrom}
+                                        {block:Reblogs}
+                                            <div class="reblog_trail_item">
+                                                <a{block:HasPermalink} href="{Permalink}" {Target}{/block:HasPermalink} class="tumblelog_username"{block:isOriginalEntry} style="display:none"{/block:IsOriginalEntry}{block:IsDeactivated} title="Deactivated"{/block:IsDeactivated}>
+                                                    {Username}:
+                                                </a>
+                                                {Body}
+                                            </div>
+                                        {/block:Reblogs}
+                                    {/block:RebloggedFrom}
+                                </div>
+                            {/block:Description}
+                        {/block:Link}
+                        
+                        {block:Chat}
+                            {block:Title}<h1>{Title}</h1>{/block:Title}
+                            <ul class="resetlist chat">
+                                {block:Lines}
+                                    <li>
+                                        {block:Label}<b class="chat-label">{Label}</b> {/block:Label}{Line}
+                                    </li>
+                                {/block:Lines}
+                            </ul>
+                        {/block:Chat}
+                        
+                        {block:Audio}
+                            <figure>
+                                {block:AudioEmbed}
+                                    <div class="tmblr-embed">
+                                        {AudioEmbed}
+                                    </div>
+                                {/block:AudioEmbed}
+                                {block:AudioPlayer}
+                                    <div class="trackname subfont">
+                                        {block:TrackName}{TrackName}{/block:TrackName}
+                                    </div>
+                                    {block:AlbumArt}
+                                        <div class="albumart">
+                                            <img src="{AlbumArtURL}" alt="{TrackName}"/>
+                                        </div>
+                                    {/block:AlbumArt}
+                                    <div class="audiobox">
+                                        <div class="player">{AudioPlayer}</div>
+                                        <div class="tracker"></div>
+                                        <div class="music"><span class="ent ent-note-beamed"></span></div>
+                                    </div>
+                                {/block:AudioPlayer}
+                                {block:Caption}
+                                    <figcaption class="caption"{block:IndexPage}{block:IfNotShowPostCaptions} style="display:none"{/block:IfNotShowPostCaptions}{/block:IndexPage}>
+                                        {block:NotReblog}
+                                            {Caption}
+                                        {/block:NotReblog}
+                                        {block:RebloggedFrom}
+                                            {block:Reblogs}
+                                                <div class="reblog_trail_item">
+                                                    <a{block:HasPermalink} href="{Permalink}" {Target}{/block:HasPermalink} class="tumblelog_username"{block:isOriginalEntry} style="display:none"{/block:IsOriginalEntry}{block:IsDeactivated} title="Deactivated"{/block:IsDeactivated}>
+                                                        {Username}:
+                                                    </a>
+                                                    {Body}
+                                                </div>
+
+                                            {/block:Reblogs}
+                                        {/block:RebloggedFrom}
+                                    </figcaption>
+                                {/block:Caption}
+                            </figure>
+                        {/block:Audio}
+                        
+                        {block:Answer}
+                            <div class="ask-wrapper">
+                                <div class="ask-user">{Asker} asked:</div>
+                                <div class="ask-content">{Question}</div>
+                            </div>
+                            {block:NotReblog}
+                                <div class="answer-content" style="display:block">
+                                    {Answer}
+                                </div>
+                            {/block:NotReblog}
+                            {block:RebloggedFrom}
+                                {block:Answerer}
+                                    <div class="ask-wrapper">
+                                        <div class="ask-user">{Answerer} replied:</div>
+                                        <div class="ask-content">{Answer}</div>
+                                    </div>
+                                {/block:Answerer}
+                                <div class="answer-content"{block:Reblogs} style="display:block"{/block:Reblogs}>
+                                    {block:Reblogs}
+                                        <div class="reblog_trail_item">
+                                            <a{block:HasPermalink} href="{Permalink}" {Target}{/block:HasPermalink} class="tumblelog_username"{block:isOriginalEntry} style="display:none"{/block:IsOriginalEntry}{block:IsDeactivated} title="Deactivated"{/block:IsDeactivated}>
+                                                {Username}:
+                                            </a>
+                                            {Body}
+                                        </div>
+                                    {/block:Reblogs}
+                                </div>
+                            {/block:RebloggedFrom}
+                        {/block:Answer}
+                        
+                        {block:HasTags}
+                            <div class="tags subfont"{block:IndexPage}{block:IfNotShowPostTags} style="display:none"{/block:IfNotShowPostTags}{/block:IndexPage}>
+                                {block:Tags}<a href="{TagURL}">#{Tag}</a>{/block:Tags}
+                            </div>
+                        {/block:HasTags}
+                        
+                        {block:Date}
+                            <ul class="resetlist post_footer">
+                                <li class="btnbox">
+                                    {block:IndexPage}
+                                        <a href="{Permalink}" title="Permalink" class="permalink_btn tooltip">
+                                            <span class="ent ent-dot-3"></span>
+                                        </a>
+                                        <a href="{Permalink}" title="View notes" class="notes_btn tooltip">
+                                            <span class="ent ent-eye"></span>
+                                        </a>
+                                    {/block:IndexPage}
+                                    {block:PermalinkPage}{block:RebloggedFrom}
+                                        <a href="{ReblogParentURL}" title="Reblogged via {ReblogParentName}" class="via_btn tooltip" {Target}>
+                                            <span class="ent ent-location"></span>
+                                        </a>
+                                    {/block:RebloggedFrom}{/block:PermalinkPage}
+                                </li>
+                                <li class="info">
+                                    <span class="timeago subfont">{TimeAgo}</span>
+                                    <span class="notecount subfont">+{NoteCount}</span>
+                                </li>
+                                <li class="btnbox">
+                                    {block:PermalinkPage}{block:RebloggedFrom}
+                                        <a href="{ReblogRootURL}" title="Posted by {ReblogRootName}" class="origin_btn tooltip" {Target}>
+                                            <span class="ent ent-target"></span>
+                                        </a>
+                                    {/block:RebloggedFrom}{/block:PermalinkPage}
+                                    {block:IndexPage}
+                                        <div title="Like" class="like_btn tooltip">
+                                            {LikeButton size="100"}
+                                            <span class="likey ent ent-heart"></span>
+                                        </div>
+                                        <a href="{ReblogURL}" title="Reblog" class="reblog_btn tooltip" target="_blank">
+                                            <span class="ent ent-forward"></span>
+                                        </a>
+                                    {/block:IndexPage}
+                                </li>
+                            </ul>
+                            
+                            {block:IndexPage}
+                                <div class="notes_wrapper" style="display:none">
+                                    <div class="no-notes"{block:NoteCount} style="display:none"{/block:NoteCount}>0 notes</div>
+                                    {block:NoteCount}
+                                        <div class="notes-loader">Loading notes...</div>
+                                        <div class="notes-holder unprocessed"></div>
+                                    {/block:NoteCount}
+                                </div>
+                            {/block:IndexPage}
+                            
+                            {block:PostNotes}
+                                <div class="notes_wrapper">
+                                    {PostNotes}
+                                </div>
+                            {/block:PostNotes}
+                        {/block:Date}
+                        
+                    </article>
+                {/block:Posts}
+            </main>
+            <!-- end of blog panel tab -->
+            
+            
+            
+            
+            
+            
+            <!-- MESSAGE PANEL TAB (please do not edit/delete): -->
+            {block:AskEnabled}
+            <div id="message__panel" class="panel-width">
+            
+                <h1> // MESSAGE </h1>
+                
+                <div class="entry">
+                    <h4> {AskLabel} </h4>
+                    <p><iframe frameborder="0" scrolling="no" width="100%" height="190" src="https://www.tumblr.com/ask_form/{Name}.tumblr.com" style="background-color:transparent;overflow:hidden" id="ask_form"></iframe><!--[if IE]><script type="text/javascript">document.getElementById('ask_form').allowTransparency=true;</script><![endif]--></iframe></p>
+                </div>
+                
+            </div>
+            {/block:AskEnabled}
+            <!-- end of message panel tab -->
+            
+            
+            
+            
+            
+            
+            <!-- ABOUT PANEL TAB: -->
+            {block:IfShowAboutTab}
+            <div id="about__panel" class="panel-width">
+                
+                <h1> // ABOUT </h1>
+                
+                <div class="entry">
+                    <!----------------------------------------|
+                    
+                        Your description automatically goes
+                        in this section below:
+                        
+                    |----------------------------------------->
+                    
+                    {block:Description}
+                    <h6> Description </h6>
+                    <p> {Description} </p>
+                    
+                    <hr> <!-- line break -->
+                    {/block:Description}
+                    
+                    <!----------------------------------------|
+                    
+                        Your about contents goes in this 
+                        section below:
+                        
+                        (edit and delete as you wish)
+                        
+                    |----------------------------------------->
+                    
+                    <b> Name :</b> -
+                    <br>
+                    <b> Age:</b> -
+                    <br>
+                    <b> Location :</b> -
+                    <br>
+                    
+                    <hr>  <!-- line break -->
+                    
+                    <p> Content </p>
+                    
+                    <p> Content </p>
+                    
+                    <!---------------------------------------->
+                </div>
+                
+            </div>
+            {/block:IfShowAboutTab}
+            <!-- end of about panel tab -->
+            
+            
+            
+            
+            
+            
+            <!-- NAVIGATION PANEL TAB: -->
+            {block:IfShowNavigationTab}
+            <div id="navigation__panel" class="panel-width">
+                
+                <h1> // Navigation </h1>
+                
+                <div class="entry">
+                <!----------------------------------------|
+                    
+                    Your navigation links goes in this 
+                    section below:
+                        
+                    (edit and delete as you wish)
+                    
+                    ** you can have the links as either
+                       "horizontal" or "vertical"
+                        
+                |----------------------------------------->
+                    
+                    <h4> Subheading </h4>
+                    
+                    <nav class="links vertical">
+                        <a href="/"> Link </a>
+                        <a href="/"> Link </a>
+                        <a href="/"> Link </a>
+                        <a href="/"> Link </a>
+                    </nav>
+                    
+                    <hr> <!-- line break -->
+                    
+                    <h4> Subheading </h4>
+                    
+                    <nav class="links horizontal">
+                        <a href="/"> Link </a>
+                        <a href="/"> Link </a>
+                        <a href="/"> Link </a>
+                        <a href="/"> Link </a>
+                    </nav>
+                    
+                    <hr> <!-- line break -->
+                    
+                    <h4> Subheading </h4>
+                    
+                    <nav class="links vertical">
+                        <a href="/"> Link </a>
+                        <a href="/"> Link </a>
+                        <a href="/"> Link </a>
+                        <a href="/"> Link </a>
+                    </nav>
+                    
+                <!---------------------------------------->
+                </div>
+                
+            </div>
+            {/block:IfShowNavigationTab}
+            <!-- end of navigation panel tab -->
+            
+            
+            
+            
+            
+            
+            <!-- FAQ PANEL TAB: -->
+            {block:IfShowFAQTab}
+            <div id="faq__panel" class="panel-width">
+                
+                <h1> // FAQ'S </h1>
+                
+                <ol class="faq">
+                <!----------------------------------------|
+                    
+                    Your FAQ contents goes in this 
+                    section below:
+                        
+                    (edit and delete as you wish)
+                    
+                |----------------------------------------->
+                    
+                    <li>
+                        <h6 class="question"> Question? </h6>
+                        <div class="answer"> Answer </div>
+                    </li>
+                    
+                    <li>
+                        <h6 class="question"> Question? </h6>
+                        <div class="answer"> Answer </div>
+                    </li>
+                    
+                    <li>
+                        <h6 class="question"> Question? </h6>
+                        <div class="answer"> Answer </div>
+                    </li>
+                    
+                    <li>
+                        <h6 class="question"> Question? </h6>
+                        <div class="answer"> Answer </div>
+                    </li>
+                    
+                <!---------------------------------------->
+                </ol>
+                
+            </div>
+            {/block:IfShowFAQTab}
+            <!-- end of FAQ panel tab -->
+            
+            
+            
+            
+            
+            
+            <!-- BLOGROLL PANEL TAB (please do not edit/delete): -->
+            {block:IfShowBlogrollTab}{block:Following}
+            <div id="blogroll__panel" class="panel-width">
+                
+                <h1> // BLOGROLL </h1>
+                
+                <div class="blogroll subfont">
+                    {block:Followed}
+                        <a href="{FollowwedURL}" class="following" {Target}>
+                            <img src="{FollowedPortraitURL-48}"/>
+                            <span>{FollowedName}</span>
+                        </a>
+                    {/block:Followed}
+                </div>
+                
+            </div>
+            {/block:Following}{/block:IfShowBlogrollTab}
+            <!-- end of blogroll panel tab -->
+            
+            
+            
+            
+            
+            
+        </div>
+        <!-- end of content body -->
+        
+    </div>
+    <!-- end of site container -->
+    
+    
+    
+    
+    
+    
+    <!-- PAGINATION: -->
+    {block:Pagination}
+        <div id="pagination">
+            {block:NextPage}
+                <a href="{NextPage}" title="Next page" class="tooltip">
+                    <span class="ent ent-right-open"></span>
+                </a>
+            {/block:NextPage}
+            {block:PreviousPage}
+                <a href="{PreviousPage}" title="Prev page" class="tooltip">
+                    <span class="ent ent-left-open"></span>
+                </a>
+            {/block:PreviousPage}
+        </div>
+    {/block:Pagination}
+    <!-- end of pagination -->
+    
+    
+    
+    
+    
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://static.tumblr.com/kmw8hta/1WKpaiuda/tooltipster.main.min.js"></script>
+    <script src="https://static.tumblr.com/kmw8hta/heppglaoh/tooltipster-discovery.min.js"></script>
+    <script src="https://static.tumblr.com/kmw8hta/rVKpb21vn/pxuphotoset.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/echxn/yeolithm@master/src/js/thm31.js"></script>
+
+
+    <!--   
+        ==========================================================
+        
+        
+        // Credits: 
+        
+        Entypo Icons 
+        - www.entypo.com
+        - Copyright (c) 2015 Daniel Bruce
+        - Licensed under the CC BY-SA 4.0 license
+        
+        PXU Photoset Extended
+        - github.com/pixelunion/Extended-Tumblr-Photoset
+        - Copyright (c) 2013 Pixel Union
+        - Licensed under the MIT license
+        
+        Tooltipster 
+        - github.com/iamceege/tooltipster
+        - Copyright (c) 2012,2016 Caleb Jacob and Louis Ameline
+        - Licensed under the MIT license
+        
+        
+        ==========================================================
+    --> 
+    
+    
+</body>
+</html>
