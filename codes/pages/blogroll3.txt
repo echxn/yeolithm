@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<head>
+
+
+    <!--  
+        ==========================================================
+ 
+ 
+        BLOGROLL #3 ( https://yeolithm.com/preview/blogroll/3 )
+        Version 1.1
+        Released: 19/11/2020
+        Updated: 06/03/2021
+        Created by: yeoli-thm
+        Website: yeoli-thm.tumblr.com
+        Support: yeoli-thm.tumblr.com
+       
+        Copyright (c) 2021. Powered by Tumblr.        
+         
+         
+        ==========================================================
+         
+         
+        // Terms Of Use:
+           - Do not steal or use as base codes.
+           - Do not repost or redistribute codes.
+           - Feel free to customize theme for your personal use
+             but please do not remove the credits.
+         
+         
+        ==========================================================
+    -->
+
+
+    <meta charset="utf-8">
+    <title>{Title}</title>
+    {block:Description}
+    <meta name="description" content="{MetaDescription}">
+    {/block:Description}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <link href="https://static.tumblr.com/kmw8hta/XrWqpjx4a/main.min.css" rel="stylesheet">
+    <script src="https://static.tumblr.com/kmw8hta/5lfqpjx4j/preload.js"></script>
+    
+    
+    <!-- GOOGLE FONTS LINK: -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!------------------------>
+    
+
+    <!-- HTML5 Shiv -->
+    <!--[if lt IE 9]>
+        <script src="https://static.tumblr.com/hriofhd/Qj0m8pn7q/html5shiv.js"></script>
+    <![endif]-->
+    
+
+    <style>
+    
+    
+    :root {
+        
+        
+    /*  FONT STYLING:  */
+        
+        --bodyFontFamily: 'Roboto', sans-serif;
+        --bodyFontSize: 13px;
+        
+        --tooltipFontSize: 10px;
+        --tooltipFontWeight: bold;
+        --tooltipTextTransform: uppercase;
+        --tooltipLetterSpacing: 0px;
+        
+        
+    /*  COLORS:  */    
+        
+        --bodyTextColor: #999;
+        --boldTextColor: #222;
+        --headingTextColor: #222;
+        
+        --backgroundColor: #f5f6f7;
+        
+        --containerColor: #fff;
+        --containerBoxShadow: 2px 2px 0px 1px rgba(0,0,0,.08);
+        
+        --searchBorderColor: #e1e1e1;
+        
+        --blogrollUserHoverColor: #eee;
+        
+        --tooltipTextColor: #fff;
+        --tooltipBackgroundColor: #222;
+        --tooltipLinksHoverColor: rgba(255,255,255,.1);
+        
+        
+    /*  BORDER RADIUS:  */
+    
+        --borderRadius: 4px;
+        --containerBorderRadius: 10px;
+        
+        
+    }
+    
+    
+    {CustomCSS}
+    </style>
+</head>
+<body>
+
+
+
+
+    <main id="container" class="hidden">
+    
+    
+        <header>
+            <h1 id="following"><span class="num"></span> Following</h1>
+            <nav id="menu">
+                <a href="/" class="tooltip" title="Home" aria-label="Home">
+                    <span class="fx fx-home"></span>
+                </a>
+                {block:AskEnabled}
+                <a href="/ask" class="tooltip" title="Message" aria-label="Message">
+                    <span class="fx fx-mail"></span>
+                </a>
+                {/block:AskEnabled}
+                <a href="https://yeoli-thm.tumblr.com" class="tooltip" title="Credit" aria-label="Credit" target="_blank">
+                    <span class="fx fx-alert-circle"></span>
+                </a>
+            </nav>
+        </header>
+        
+        
+        <div id="search">
+            <input class="searchquery" type="text" placeholder="Search {Name}'s following"/>
+            <button class="clear" aria-label="Clear search">
+                <span class="fx fx-x"></span>
+            </button>
+        </div>
+        
+        
+        <ul id="blogroll" class="resetlist">
+            {block:Following}
+            {block:Followed}
+                <li id="{FollowedName}" class="blogroll-item">
+                    <div class="avatar">
+                        <img src="{FollowedPortraitURL-96}" alt=""/>
+                    </div>
+                    <a href="{FollowedURL}" class="bloguser" target="_block">
+                        <b class="blogname">{FollowedName}</b>
+                        <span class="blogtitle">{FollowedTitle}</span>
+                    </a>
+                    <div class="more-wrapper">
+                        <button class="more-button" aria-label="More options">
+                            <span class="fx fx-more-vertical"></span>
+                        </button>
+                        <div class="more-options">
+                            <a href="https://www.tumblr.com/follow/{FollowedName}" target="_blank">Follow</a>
+                            <a href="{FollowedURL}" target="_blank">View blog</a>
+                        </div>
+                    </div>
+                </li>
+            {/block:Followed}
+            {/block:Following}
+        </ul>
+        
+        
+        <div class="no-result">
+            <b>{Name}</b> does not follow <b class="term"></b>
+        </div>
+        
+        
+    </main>
+    
+    
+    
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://static.tumblr.com/kmw8hta/1WKpaiuda/tooltipster.main.min.js"></script>
+    <script src="https://static.tumblr.com/kmw8hta/heppglaoh/tooltipster-discovery.min.js"></script>
+    <script src="https://static.tumblr.com/kmw8hta/ykVqpjx3l/jquery.blogroll.min.js"></script>
+    
+    
+    <!--   
+        ==========================================================
+        
+        
+        // Credits: 
+        
+        Feather Icons 
+        - https://github.com/feathericons/feather
+        - Copyright (c) 2013 - 2017 Cole Bemis
+        - Licensed under the MIT license
+        
+        Tooltipster 
+        - https://github.com/iamceege/tooltipster
+        - Copyright (c) 2012,2016 Caleb Jacob and Louis Ameline
+        - Licensed under the MIT license
+        
+        
+        ==========================================================
+    --> 
+    
+    
+</body>
+</html>
