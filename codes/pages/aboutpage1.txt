@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <!--  
+        ==========================================================
+ 
+ 
+        About Page #1 ( https://yeoli-thm.tumblr.com/aboutpage/1 )
+        Version 1.1
+        Released: 26/07/2019
+        Updated: 06/03/2021
+        Created by: yeoli-thm
+        Website: yeoli-thm.tumblr.com
+        Support: yeoli-thm.tumblr.com
+       
+        Copyright (c) 2021. Powered by Tumblr.        
+         
+         
+        ==========================================================
+         
+         
+        // Terms Of Use:
+           - Do not steal or use as base codes.
+           - Do not repost or redistribute codes.
+           - Feel free to customize theme for your personal use
+             but please do not remove the credits.
+         
+         
+        ==========================================================
+    -->
+    
+
+    <meta charset="utf-8">
+    <title>{Title}</title>
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+    
+    <link href="https://static.tumblr.com/kmw8hta/SAwpuotjy/feather.css" rel="stylesheet">
+    <link href="https://static.tumblr.com/kmw8hta/GNMqpjwm2/main.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
+    
+    <!-- HTML5 Shiv -->
+    <!--[if lt IE 9]>
+        <script src="https://static.tumblr.com/hriofhd/Qj0m8pn7q/html5shiv.js"></script>
+    <![endif]-->
+    
+    <style>
+    
+    
+    
+    :root {
+        
+    /*-------- CONTAINER SIZES: --------*/
+    
+        --container-width: 700px;
+        --container-height: 430px;
+        
+        --sidebar-width: 200px;
+        
+        --header-height: 150px;
+        
+        --content-padding: 24px 32px;
+        
+    /*-------- COLORS: -----------------*/
+    
+        --background: #f9f9f9;
+        --box-shadow: rgba(0,0,0,.1);
+        
+        --header-bg: #ffeeda;
+        --header-title: #333;
+        
+        --about-label: #333;
+        
+        --sidebar-bg: #333;
+        --sidebar-text: #eee;
+        --sidebar-links-hover: #888;
+        
+        --container-bg: #fff;
+        --body-text: #999;
+        --bold-text: #58b5a8;
+        --italic-text: #90e1c4;
+        --text-headings: #333;
+        --text-links: #fe8a80;
+        --text-links-hover: #333;
+        --blockquote-border: #e8e8e8;
+        
+        --menu-links-dot: #333;
+        --menu-links-dot-hover: #90dbbf;
+        
+        --search-bar-bg: #90dbbf;
+        --search-bar-text: #fff;
+        
+        --tooltip-bg: #333;
+        --tooltip-text: #fff;
+        
+        --scrollbar-track: #f1f1f1;
+        --scrollbar-thumb: #333;
+        
+        --credit-button: #333;
+        
+    }
+    
+    
+    
+    /*-------- SCROLLBAR: --------*/
+    ::-webkit-scrollbar {
+        width: 17px;
+        height: 17px;
+        background-color: transparent;
+    }
+    ::-webkit-scrollbar-track {
+        border-width: 8px;
+        border-style: solid;
+        border-color: var(--container-bg);
+        background-color: var(--scrollbar-track);
+    }
+    ::-webkit-scrollbar-thumb {
+        min-height: 48px;
+        min-width: 48px;
+        border-width: 8px;
+        border-style: solid;
+        border-color: var(--container-bg);
+        background-color: var(--scrollbar-thumb);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        border-width: 7px;
+    }
+    ::-webkit-scrollbar-corner {
+        background-color: var(--scrollbar-track);
+    }
+   
+    /*-------- BODY STYLING: --------*/
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 11.5px;
+        color: var(--body-text);
+        background-color: var(--background);
+    }
+    
+    a, a:link, a:visited {
+        color: var(--text-links);
+        text-decoration: none;
+        transition: all .25s;
+    }
+    
+    a:hover {
+        color: var(--text-links-hover);
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--text-headings);
+    }
+    
+    b, strong {
+        color: var(--bold-text);
+    }
+    
+    i, em {
+        color: var(--italic-text);
+    }
+    
+    blockquote {
+        padding: .5em 1.5em;
+        border-left: 1px solid var(--blockquote-border);
+    }
+    
+    /*-------- TOOLTIP: --------*/
+    .tooltipster-content {
+        padding: 6px 12px;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 2px;
+        color: var(--tooltip-text);
+        background-color: var(--tooltip-bg);
+    }
+    
+    /*-------- HEADER: --------*/
+    #header {
+        background-color: var(--header-bg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    h1.header-title {
+        font-size: 20px;
+        color: var(--header-title);
+    }
+    
+    /*-------- LEFTBAR ABOUT LABEL & ICON: --------*/
+    .about-label {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: var(--about-label);
+    }
+    
+    .icon-avatar {
+        border-radius: 50%;
+    }
+    
+    /*-------- SIDEBAR: --------*/
+    #sidebar {
+        color: var(--sidebar-text);
+        background-color: var(--sidebar-bg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 4px 2px 5px -3px var(--box-shadow);
+    }
+    
+    /*-------- NAVIGATION LINKS: --------*/
+    .nav {
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .nav a {
+        color: inherit;
+    }
+    
+    .nav:hover a {
+        color: var(--sidebar-links-hover);
+    }
+    
+    .nav:hover a:hover {
+        color: inherit;
+    }
+    
+    .nav .fx {
+        margin-right: 6px;
+    }
+    
+    .nav:after {
+        content: '';
+        position: absolute;
+        opacity: 0.3;
+        top: 100%;
+        margin-top: 24px;
+        left: 0;
+        width: 24px;
+        height: 1px;
+        background-color: var(--sidebar-text);
+    }
+    
+    /*-------- STATS: --------*/
+    .stats label {
+        margin-right: 2px;
+        font-weight: bold;
+    }
+    
+    .stats a {
+        color: inherit;
+    }
+    
+    .stats a:hover {
+        color: var(--sidebar-links-hover);
+    }
+    
+    /*-------- MAIN SECTION: --------*/
+    #main {
+        background-color: var(--container-bg);
+        box-shadow: 2px 2px 5px -3px var(--box-shadow);
+    }
+    
+    /*-------- RIGHTBAR MENU LINKS: --------*/
+    .menu a:before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: var(--menu-links-dot);
+        transition: all .2s;
+    }
+    
+    .menu a:hover:before {
+        background-color: var(--menu-links-dot-hover);
+    }
+    
+    /*-------- SEARCH BAR: --------*/
+    .searchbutton {
+        border-radius: 50%;
+        color: var(--search-bar-text);
+        background-color: var(--search-bar-bg);
+    }
+    
+    .searchbar {
+        color: var(--search-bar-text);
+        background-color: var(--search-bar-bg);
+        border-top: 8px solid var(--container-bg);
+    }
+    
+    .searchquery {
+        font-family: inherit!important;
+        font-size: inherit!important;
+    }
+    
+    .searchsubmit {
+        border-radius: 50%;
+        color: var(--search-bar-bg);
+        background-color: var(--search-bar-text);
+    }
+    
+    /*-------- PAGE CREDIT: --------*/
+    a#credit {
+        position: fixed;
+        z-index: 999;
+        display: block;
+        bottom: 16px;
+        right: 16px;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+        color: var(--credit-button);
+    }
+    
+    
+    
+    </style>
+</head>
+<body>
+
+
+
+
+<div id="container">
+<input type="checkbox" id="searchtoggle"/>
+
+
+
+
+
+    
+    <!-- HEADER SECTION: -->
+    <!-- • To add a header image, replace the 
+           https://image.png with your own image URL.
+         • Initial default dimensions are 700px by 150px. -->
+    <header id="header" style="background-image: url('https://image.png');">
+        <!-- HEADER TITLE: -->
+        <h1 class="header-title"> Title </h1>
+    </header>
+    
+    
+    
+    
+    
+    
+    <!-- ABOUT LABEL & ICON AVATAR: -->
+    <div id="leftbar">
+        <div class="about-label"> About </div>
+        <div class="icon-avatar"><img src="{PortraitURL-96}" alt=""/></div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <!-- SIDEBAR SECTION: -->
+    <!-- • To add a sidebar image, replace the 
+           https://image.png with your own image URL.
+         • Initial default dimensions are 200px by 330px. -->   
+    <aside id="sidebar" style="background-image: url('https://image.png');">
+    
+    
+        <!-- NAVIGATION LINKS: -->
+        <nav class="nav">
+            <a href="/"> <i class="fx fx-home"></i> Home </a>
+            <a href="/ask"> <i class="fx fx-mail"></i> Ask </a>
+            <a href="/archive"> <i class="fx fx-clock"></i> Archive </a>
+            <a href="https://www.tumblr.com/dashboard"> <i class="fx fx-layout"></i> Dashboard </a>
+        </nav><!--do not delete-->
+        
+        
+        <!-- STATS BOX: -->
+        <ul class="stats">
+            <!-- you may delete/add a new line as required-->
+            
+            <li> <label> Label: </label> Info/Link </li>
+            <li> <label> Label: </label> Info/Link </li>
+            <li> <label> Label: </label> Info/Link </li>
+            
+        </ul><!--do not delete-->
+        
+        
+    </aside><!--do not delete-->
+        
+        
+        
+        
+        
+        
+    <main id="main">
+    
+    
+        <section class="content">
+        <!------ YOUR CONTENT GOES HERE: ------>
+            
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, <a href="/">commodo feugiat</a>, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus <b>molestie</b> porta. Curabitur sit amet quam id libero suscipit venenatis.</p>
+        
+        <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Consectetuer adipiscing elit.</li>
+            <li>Nam at tortor quis ipsum tempor aliquet.</li>
+        </ul>
+            
+        <p>Cum sociis natoque <i>penatibus</i> et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.</p>
+
+        <blockquote>Donec placerat mauris commodo dolor. Nulla tincidunt. Nulla vitae augue.</blockquote>
+        
+        <p>Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.</p>
+        
+        <!------ END OF CONTENT ------>
+        </section><!--do not delete-->
+        
+        
+        <!-- SEARCH BAR: -->
+        <form action="/search" method="get" class="searchbar">
+            <div class="searchwrap">
+                <input type="text" name="q" value="{SearchQuery}" placeholder="Enter you search..." class="searchquery"/>
+                <input type="submit" id="searchsubmit"/>
+                <label for="searchsubmit" class="searchsubmit" title="Search"><i class="fx fx-search"></i></label>
+            </div>
+        </form><!--do not delete-->
+        
+        
+    </main><!--do not delete-->
+    
+    
+        
+        
+        
+        
+    <div id="rightbar">
+    
+    
+        <!-- MENU LINKS: -->
+        <div class="menu">
+            <!-- you may delete/add a new link as required-->
+            
+            <a href="URL" title="Label 1" class="tooltip"></a>
+            <a href="URL" title="Label 2" class="tooltip"></a>
+            <a href="URL" title="Label 3" class="tooltip"></a>
+            
+        </div><!--do not delete-->
+        
+    
+        <!-- SEARCH BAR BUTTON: -->
+        <label for="searchtoggle" class="searchbutton" title="Search" class="tooltip">
+            <i class="fx fx-search"></i>
+            <i class="fx fx-x"></i>
+        </label><!--do not delete-->
+        
+        
+    </div><!--do not delete-->
+        
+        
+        
+        
+        
+        
+</div><!--do not delete-->
+
+<a href="https://yeoli-thm.tumblr.com" id="credit" title="&copy; yeoli-thm" target="_blank">YT</a><!--please do not remove page credit-->
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://static.tumblr.com/kmw8hta/1WKpaiuda/tooltipster.main.min.js"></script>
+<script src="https://static.tumblr.com/kmw8hta/heppglaoh/tooltipster-discovery.min.js"></script>
+<script src="https://static.tumblr.com/kmw8hta/aF0qpjwmm/jquery.ap01.min.js"></script>
+    
+    
+    <!--   
+        ==========================================================
+        
+        
+        // Credits: 
+        
+        Feather Icons 
+        - https://github.com/feathericons/feather
+        - Copyright (c) 2013-2017 Cole Bemis
+        - Licensed under the MIT license
+        
+        Tooltipster 
+        - https://github.com/iamceege/tooltipster
+        - Copyright (c) 2012,2016 Caleb Jacob and Louis Ameline
+        - Licensed under the MIT license
+        
+        
+        ==========================================================
+    -->
+    
+    
+</body>
+</html>
