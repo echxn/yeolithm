@@ -136,7 +136,7 @@
         
     /*  FONTS & STYLING:  */
     
-        --bodyFontFamily: {text:Body font family}, 'Calibri', sans-serif;
+        --bodyFontFamily: '{text:Body font family}', 'Calibri', sans-serif;
         --bodyFontSize11: 11px;
         --bodyFontSize12: 12px;
         --bodyFontSize13: 13px;
