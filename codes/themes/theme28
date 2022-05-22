@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ 
+ 
+ 
+
+
+
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<!---          THEME 28 - MADE BY YEOLI-THM.TUMBLR.COM          --->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+<script type="text/javascript" src="https://static.tumblr.com/kmw8hta/NaEnnqkxd/tooltip.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> 
+<script type="text/javascript" src="https://static.tumblr.com/lv6casp/aCNm74ixy/stepcarousel.js">
+/***********************************************
+* Step Carousel Viewer script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit https://www.dynamicDrive.com for hundreds of DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+</script>
+<script type="text/javascript" src="https://static.tumblr.com/kmw8hta/MQInnqdev/panel.js"></script> 
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="https://static.tumblr.com/kmw8hta/Bygnowwv9/theme.css"/>
+
+<title>{Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
+<link rel="shortcut icon" href="{Favicon}" />
+
+<meta name="image:Background Image" content=""/>
+<meta name="image:Sidebar Icon" content=""/>
+
+<meta name="if:Background Image Repeat" content="0"/>
+<meta name="if:Background Image Stretch" content="0"/>
+<meta name="if:250px Posts" content="0"/>
+<meta name="if:400px Posts" content="1"/>
+<meta name="if:500px Posts" content="0"/>
+<meta name="if:White Like Button" content="0"/>
+<meta name="if:Grey Like Button" content="1"/>
+<meta name="if:Black Like Button" content="0"/>
+<meta name="if:Infinite Scroll" content="0"/>
+<meta name="if:Permalink Buttons" content="1"/>
+<meta name="if:Show Captions" content="1"/>
+<meta name="if:Show Tags" content="0"/>
+<meta name="if:Show Sidebar Links Box" content="1"/>
+<meta name="if:Grayscale Posts" content="0"/>
+
+<meta name="text:Background Image Positioning" content="center"/>
+<meta name="text:Panel Button Opacity" content="0.3"/>
+<meta name="text:Link 1" content="Link 1"/>
+<meta name="text:Link 1 URL" content=""/>
+<meta name="text:Link 2" content="Link 2"/>
+<meta name="text:Link 2 URL" content=""/>
+<meta name="text:Link 3" content="Link 3"/>
+<meta name="text:Link 3 URL" content=""/>
+<meta name="text:Link 4" content="Link 4"/>
+<meta name="text:Link 4 URL" content=""/> 
+<meta name="text:Link 5" content="Link 5"/>
+<meta name="text:Link 5 URL" content=""/>
+<meta name="text:Link 6" content="Link 6"/>
+<meta name="text:Link 6 URL" content=""/>
+<meta name="text:Link 7" content="Link 7"/>
+<meta name="text:Link 7 URL" content=""/>
+<meta name="text:Link 8" content="Link 8"/>
+<meta name="text:Link 8 URL" content=""/> 
+<meta name="text:Description Box 2" content="Updates: text"/>
+<meta name="text:Description Box 3" content=""/>
+
+<meta name="color:Background" content="#ffffff"/>
+<meta name="color:Text" content="#bbbbbb"/>
+<meta name="color:Links" content="#888888"/>
+<meta name="color:Links Hover" content="#bbbbbb"/>
+<meta name="color:Borders" content="#ededed"/>
+<meta name="color:Rotating Borders" content="#96d5dc"/>
+<meta name="color:Post Bg" content="#ffffff"/>
+<meta name="color:Blockquote Bg" content="#ffffff"/>
+<meta name="color:Permalink Button Bg" content="#ffffff"/>
+<meta name="color:Sidebar Icon Bg" content="#bce4e9"/>
+<meta name="color:Blog Title" content="#888888"/>
+<meta name="color:Tooltip Text" content="#ffffff"/>
+<meta name="color:Tooltip Bg" content="#000000"/>
+
+<style type="text/css">
+    
+#tumblr_controls, .tmblr-iframe{
+    position:fixed!important;
+    z-index:99999!important;
+    top:0px!important;
+    right:0px!important;
+}  
+    
+body{
+    cursor:default;
+    margin:0px;
+    padding:0px;
+    font-family:trebuchet ms;
+    font-size:9px;
+    text-align:justify;
+    word-wrap:break-word;
+    color:{color:Text};
+    background:{color:Background};
+    background-attachment:fixed;
+    {block:IfBackgroundImageRepeat}background-repeat:repeat;{/block:IfBackgroundImageRepeat}
+    {block:IfNotBackgroundImageRepeat}background-repeat:no-repeat;{/block:IfNotBackgroundImageRepeat}
+    {block:IfBackgroundImageStretch}-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;{/block:IfBackgroundImageStretch}
+    background-position:{text:Background Image Positioning};
+    {block:IfBackgroundImageImage}background-image:url('{image:Background Image}');{/block:IfBackgroundImageImage}
+}    
+
+a, a:link, a:active, a:visited{
+    color:{color:Links};
+    text-decoration:none;
+    position:relative;
+	display:inline-block;
+}    
+ 
+a:hover{
+    color:{color:Links Hover};
+    text-decoration:none;
+}
+
+a::after{
+	background:{color:Rotating Borders};
+    -webkit-transition:width 0.5s; 
+	-moz-transition:width 0.5s;
+	transition:width 0.5s;
+}
+
+.icon{
+    background:{color:Post Bg};
+}
+
+.image{
+    background:{color:Sidebar Icon Bg};
+}
+
+.image img{
+    width:100%;
+}
+
+.icon-border{
+    background:{color:Post Bg};
+    border-top:1px solid {color:Borders};
+    border-left:1px solid {color:Borders};
+    border-right:1px solid {color:Borders};
+    border-bottom:1px solid {color:Rotating Borders};
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+#box{
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:7px;
+}
+
+.sidebar .panel .desc{
+    background:{color:Post Bg};
+    border:1px solid {color:Borders};
+}
+
+.title{
+    font-family:'Open Sans', sans-serif;
+    font-size:9px;
+    color:{color:Blog Title};
+}
+
+.navi a{
+    position:relative;
+    display:inline;
+    margin:0px 1px;
+    padding:0px;
+    color:{color:Text};
+}
+
+.posts{
+    {block:IndexPage}
+    {block:If250pxPosts}width:250px;{/block:If250pxPosts}
+    {block:If400pxPosts}width:400px;{/block:If400pxPosts}
+    {block:If500pxPosts}width:500px;{/block:If500pxPosts}
+    {/block:IndexPage}
+    {block:PermalinkPage}
+    {block:IfNot500pxPosts}width:400px;{/block:IfNot500pxPosts}
+    {block:If500pxPosts}width:500px;{/block:If500pxPosts}
+    {/block:PermalinkPage}
+    margin:120px auto;
+    padding:40px;
+    background:{color:Post Bg};
+    border:1px solid {color:Borders};
+}
+
+{block:IfGrayscalePosts}
+.posts{
+    filter:url("data:image/svg+xml;utf8,<svg xmlns=\'https://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter:gray;
+    -webkit-filter:grayscale(100%);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+ 
+.posts:hover{
+    filter:url("data:image/svg+xml;utf8,<svg xmlns=\'https://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter:grayscale(0%);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+{/block:IfGrayscalePosts}
+
+.posts img, .posts embed, .posts object, .posts iframe, .posts video{
+    max-width:100%;
+}
+
+h1{
+    font-family:'Open Sans', sans-serif;
+    font-size:11px;
+    text-transform:uppercase;
+    font-weight:normal;
+}
+
+h2{
+    font-family:'Open Sans', sans-serif;
+    font-size:10px;
+    text-transform:uppercase;
+    font-weight:normal;
+}
+
+blockquote{
+    padding:10px;
+    margin:10px;
+    overflow:hidden;
+    border-radius:3px;
+    background:{color:Blockquote Bg};
+    border:1px solid {color:Borders};
+}
+
+ul.chat{
+    margin:0px;
+    padding:0px;
+}
+ 
+.chat li{
+    background:{color:Blockquote Bg};
+    border:1px solid {color:Borders};
+}
+ 
+.question{
+    background:{color:Blockquote Bg};
+    border:1px solid {color:Borders};
+}
+
+#b{
+    background:{color:Permalink Button Bg};
+    border:1px solid {color:Borders};
+    transition:all 0.3s;
+}
+
+.lb{
+    z-index:80;
+}
+
+.p{
+    background:{color:Permalink Button Bg};
+    border:1px solid {color:Borders};
+}
+
+.p a{
+    color:{color:Text};
+}
+
+#p-border{
+    border-top:1px solid {color:Borders};
+    border-left:1px solid {color:Borders};
+    border-right:1px solid {color:Borders};
+    border-bottom:1px solid {color:Rotating Borders};
+    transition:all 0.s;
+}
+
+#info{
+    font-size:7px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    border-top:1px solid {color:Borders};
+}
+
+.info a{
+    display:inline;
+    padding:0px 2px;
+    color:{color:Text};
+    background:{color:Post Bg};
+}
+
+#pagination{
+    background:{color:Post Bg};
+    border:1px solid {color:Borders};
+}
+
+#pagination a{
+    color:{color:Text};
+}
+
+.tab{
+    {block:IfNot500pxPosts}width:400px;{/block:IfNot500pxPosts}
+    {block:If500pxPosts}width:500px;{/block:If500pxPosts}
+    background:{color:Post Bg};
+    border:1px solid {color:Borders};
+}
+ 
+.tab label::after{
+    content:"∨";
+}
+ 
+.tab input:checked + label::after{
+    content:"∧";
+}
+ 
+#s-m-t-tooltip{
+    z-index:999999;
+    margin:0px 16px;
+    padding:2px 6px;
+    font-size:7px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:{color:Tooltip Text};
+    background:{color:Tooltip Bg};
+}
+
+</style>
+<style type="text/css">{CustomCSS}</style>
+</head>
+<body>
+
+<div id="container">
+{block:IfNotInfiniteScroll}{block:Pagination}
+{block:NextPage}<div id="pagination" class="next"><a href="{NextPage}" title="next page">+<div id="p-border" class="pagi"></div></a></div>{/block:NextPage}
+{block:PreviousPage}<div id="pagination" class="prev"><a href="{PreviousPage}" title="previous page">-<div id="p-border" class="pagi"></div></a></div>{/block:PreviousPage}
+{/block:Pagination}{/block:IfNotInfiniteScroll}
+{block:PermalinkPagination}
+{block:PreviousPost}<div id="pagination" class="next"><a href="{PreviousPost}" title="next post">+<div id="p-border" class="pagi"></div></a></div>{/block:PreviousPost} 
+{block:NextPost}<div id="pagination" class="prev"><a href="{NextPost}" title="previous post">-<div id="p-border" class="pagi"></div></a></div>{/block:NextPost} 
+{block:PermalinkPagination}
+<div class="icon"><a href="/"><div class="icon-border"></div>   
+<div class="image">{block:IfSidebarIconImage}<img src="{image:Sidebar Icon}"/>{/block:IfSidebarIconImage}</div></a></div>
+<div id="box"><div id="side" class="sidebar"><div class="belt">
+<div class="panel">
+<div class="title">{title}</div>
+<div class="desc" style="text-align:center">
+<nav class="navi">
+<a href="/">home</a>
+<a href="/ask">msg</a>
+<a href="/archive">past</a>
+<a href="https://yeoli-thm.tumblr.com" target="_blank">thm</a>
+</nav>
+</div></div>
+{block:Description}<div class="panel">
+<div class="desc" style="text-align:justify">{Description}</div>
+</div>{block:Description}
+{block:IfShowSidebarLinksBox}<div class="panel">
+<div class="desc" style="text-align:center"><nav class="navi">
+{block:IfLink1}<a href="{text:Link 1 URL}">{text:Link 1}</a>{/block:IfLink1}
+{block:IfLink2}<a href="{text:Link 2 URL}">{text:Link 2}</a>{/block:IfLink2}
+{block:IfLink3}<a href="{text:Link 3 URL}">{text:Link 3}</a>{/block:IfLink3}
+{block:IfLink4}<a href="{text:Link 4 URL}">{text:Link 4}</a>{/block:IfLink4}
+{block:IfLink5}<a href="{text:Link 5 URL}">{text:Link 5}</a>{/block:IfLink5}
+{block:IfLink6}<a href="{text:Link 6 URL}">{text:Link 6}</a>{/block:IfLink6}
+{block:IfLink7}<a href="{text:Link 7 URL}">{text:Link 7}</a>{/block:IfLink7}
+{block:IfLink8}<a href="{text:Link 8 URL}">{text:Link 8}</a>{/block:IfLink8}
+</nav></div></div>{block:IfShowSidebarLinksBox}
+{block:IfDescriptionBox2}<div class="panel">
+<div class="desc" style="text-align:justify">{text:Description Box 2}</div>
+</div>{block:IfDescriptionBox2}
+{block:IfDescriptionBox3}<div class="panel">
+<div class="desc" style="text-align:justify">{text:Description Box 3}</div>
+</div>{block:IfDescriptionBox3}
+</div></div>
+<div style="position:fixed;z-index:20;margin:-118px auto 0px auto;opacity:{text:Panel Button Opacity}"><div id="side-paginate" style="width:182px;margin:0px;" align="center">
+<img src="https://static.tumblr.com/kmw8hta/F8Jnnl7cw/open.png" data-over="https://static.tumblr.com/kmw8hta/KNZnnl7c5/closed.png" data-select="https://static.tumblr.com/kmw8hta/KNZnnl7c5/closed.png" data-moveby="1" />
+</div></div>
+</div>
+</div>
+
+{block:IndexPage}{block:IfInfinitescroll}<script type="text/javascript" src="https://codysherman.com/tools/infinite-scrolling/code"></script><script src="https://static.tumblr.com/kmw8hta/kaDn9e425/like.js"></script>
+<div class="pg">{block:Pagination}{block:NextPage}<p id="page_nav"><a style="float:right" href="{NextPage}" id="next">Older ?</a>{/block:NextPage}{block:PreviousPage}<a style="float:left" href="{PreviousPage}">? Newer</a></p>{/block:PreviousPage}{/block:Pagination}</div>{/block:IfInfinitescroll}{/block:IndexPage}
+
+<div id="content">
+<div class="autopagerize_page_element">
+{block:Posts}
+<div class="posts">
+ 
+{block:IndexPage}{block:IfNotPermalinkButtons}{block:Date}    
+<div id="info" class="src"><div class="info">
+<a href="{Permalink}" title="{NoteCountWithLabel}">{DayOfMonthWithZero}:{MonthNumberWithZero} ,</a><a href="{ReblogURL}" target="_blank" title="rebog ?"> reblog ,</a>{block:RebloggedFrom}<a href="{ReblogParentURL}" target="_blank" class="info">via ,</a><a href="{ReblogRootURL}" target="_blank" class="info">origin ,</a>{/block:RebloggedFrom}{block:HighRes}<a href="{PhotoURL-HighRes}" target="_blank" class="info"> high res ,</a>{/block:HighRes}
+</div></div>
+{/block:Date}{/block:IfNotPermalinkButtons}{/block:IndexPage} 
+
+{block:PermalinkPage}{block:Date}    
+<div id="info" class="src"><div class="info">
+<a>{DayOfMonthWithZero}:{MonthNumberWithZero} , {NoteCountWithLabel} ,</a>{block:RebloggedFrom}<a href="{ReblogParentURL}" target="_blank" class="info">via ,</a><a href="{ReblogRootURL}" target="_blank" class="info">origin ,</a>{/block:RebloggedFrom}{block:ContentSource}<a href="{SourceURL}" target="_blank" class="info">source ,</a>{/block:ContentSource}{block:HighRes}<a href="{PhotoURL-HighRes}" target="_blank" class="info"> high res ,</a>{/block:HighRes}
+</div></div>
+{/block:Date}{/block:PermalinkPage}
+
+{block:Text}
+{block:Title}<h1>{Title}</h1>{/block:Title}
+{Body}
+{/block:Text}    
+    
+{block:Photo}
+{block:IndexPage}
+{block:If250pxPosts}<img src="{PhotoURL-500}" style="display:block;width:250px"/>{/block:If250pxPosts}
+{block:If400pxPosts}<img src="{PhotoURL-500}" style="display:block;width:400px"/>{/block:If400pxPosts}
+{block:If500pxPosts}<img src="{PhotoURL-500}" style="display:block;width:500px"/>{/block:If500pxPosts}
+{/block:IndexPage}
+{block:PermalinkPage}
+{block:IfNot500pxPosts}<img src="{PhotoURL-500}" style="display:block;width:500px"/>{/block:IfNot500pxPosts}
+{block:If500pxPosts}<img src="{PhotoURL-500}" style="display:block;width:500px"/>{/block:If500pxPosts}
+{/block:PermalinkPage}
+{/block:Photo}
+    
+{block:Photoset}
+{block:IndexPage}
+{block:If250pxPosts}{Photoset-250}{/block:If250pxPosts}
+{block:If400pxPosts}{Photoset-400}{/block:If400pxPosts}
+{block:If500pxPosts}{Photoset-500}{/block:If500pxPosts}
+{/block:IndexPage}
+{block:PermalinkPage}
+{block:IfNot500pxPosts}{Photoset-400}{/block:IfNot500pxPosts}
+{block:If500pxPosts}{Photoset-500}{/block:If500pxPosts}
+{/block:PermalinkPage}
+{/block:Photoset}
+         
+{block:Video}
+{block:IndexPage}
+{block:If250pxPosts}{Video-250}{/block:If250pxPosts}
+{block:If400pxPosts}{Video-400}{/block:If400pxPosts}
+{block:If500pxPosts}{Video-500}{/block:If500pxPosts}
+{/block:IndexPage}
+{block:PermalinkPage}
+{block:IfNot500pxPosts}{Video-400}{/block:IfNot500pxPosts}
+{block:If500pxPosts}{Video-500}{/block:If500pxPosts}
+{/block:PermalinkPage}
+{/block:Video}    
+    
+{block:Quote}
+<div style="font-size:10px;font-style:italic;padding-bottom:10px"><div style="opacity:0.5;float:left;font-style:normal;font-family:arial;font-size:40px;font-weight:bold;margin:-15px 10px -20px 0px;">❝</div> {Quote}</div>
+{block:Source}<div style="text-align:right;margin-top:10px">- {Source}</div>{/block:Source}
+{/block:Quote}    
+
+{block:Link}
+<h2><a href="{URL}" target="_blank" style="padding:5px 10px; border-left:1px solid {color:Borders};border-right:1px solid {color:Borders}">{Name}</a></h2>
+{block:Description}{Description}{/block:Description}
+{/block:Link}
+
+{block:Chat}
+{block:Title}<h1>{Title}</h1>{/block:Title}
+<div class="chat">{block:Lines}<li class="{Alt} user_{UserNumber}">{block:Label}<span class="label">{Label}</span>{/block:Label} {Line}</li>{/block:Lines}</div>
+{/block:Chat}
+    
+{block:Audio}
+{AudioEmbed}
+{/block:Audio}
+
+{block:Answer}
+<div class="question"><h2>{Asker} //</h2> {Question}</div>
+{Answer}
+{/block:Answer}
+
+
+{block:IndexPage}
+
+{block:IfShowCaptions}{block:Caption}<div style="margin-top:20px">{Caption}</div>{/block:Caption}{/block:IfShowCaptions}
+{block:IfShowTags}{block:HasTags}<div id="info" class="tag"><div class="info">{block:Tags}<a href="{TagURL}"> {Tag} ,</a>{/block:Tags}</div></div>{/block:HasTags}{/block:IfShowTags} 
+
+{block:Date}{block:IfPermalinkButtons}
+<div id="permalink">
+<div id="b" class="b1" style="float:left" title="like ?">
+<div class="lb">
+{block:IfWhiteLikeButton}{LikeButton color="white"}{/block:IfWhiteLikeButton}
+{block:IfGreyLikeButton}{LikeButton color="grey"}{/block:IfGreyLikeButton}
+{block:IfBlackLikeButton}{LikeButton color="black"}{/block:IfBlackLikeButton}
+</div>
+<div id="p-border" class="bb"></div></div>
+<div id="b" class="b2" style="float:right">
+<div class="rb">
+{block:IfWhiteLikeButton}
+<a href="{ReblogURL}" target="_blank" title="reblog ?"><img src="https://static.tumblr.com/kmw8hta/SVmnnqmjh/loop_white.png"/></a>
+{/block:IfWhiteLikeButton}
+{block:IfGreyLikeButton}
+<a href="{ReblogURL}" target="_blank" title="reblog ?"><img src="https://static.tumblr.com/kmw8hta/Ddbnnl90e/loop_grey.png"/></a>
+{/block:IfGreyLikeButton}
+{block:IfBlackLikeButton}
+<a href="{ReblogURL}" target="_blank" title="reblog ?"><img src="https://static.tumblr.com/kmw8hta/nKfnnqmj1/loop_black.png"/></a>
+{/block:IfBlackLikeButton}
+</div>
+<div id="p-border" class="bb"></div>  
+</div>
+<div class="p"><a href="{permalink}" title="{NoteCountWithLabel}">
+{DayOfMonthWithZero}:{MonthNumberWithZero}
+<div id="p-border" class="pb"></div></a></div>  
+</div>
+{/block:IfPermalinkButtons}{/block:Date}
+
+{/block:IndexPage}
+
+{block:PermalinkPage}
+{block:Caption}<div style="margin-top:20px">{Caption}</div>{/block:Caption}
+{block:HasTags}<div id="info" class="tag"><div class="info">{block:Tags}<a href="{TagURL}"> {Tag} ,</a>{/block:Tags}</div></div>{/block:HasTags} 
+{/block:PermalinkPage}
+
+</div>
+
+{block:PostNotes}<section class="tab"><div><input id="ac-1" name="accordion-1" type="checkbox"/><label for="ac-1"> </label><article>{PostNotes}</article></div></section>{/block:PostNotes} 
+
+{/block:Posts}
+</div>
+</div>
+
+</body>
+</html>
