@@ -1,0 +1,6 @@
+/*
+ * SPRING AGAIN by https://yeoli-thm.tumblr.com/
+ * Copyright (c) 2022 yeoli-thm
+ */
+
+!function(c){function h(c){var d=Math.floor(c/3600),a=Math.floor(c%3600/60),b=Math.floor(c%3600%60);if(b=b<10?"0"+b:b,d>0){a=a<10?"0"+a:a;var e=d+":"+a+":"+b}else var e=a+":"+b;return e}var a=c("#musicplayer"),d=a.attr("data-src"),i=a.find(".musicplayer_currenttime"),j=a.find(".musicplayer_totaltime"),e=a.attr("class","playable").find(".musicplayer_btn"),f=a.attr("class","playable").find(".musicplayer_skip"),g=a.attr("class","playable").find(".musicplayer_bar"),k=a.attr("class","playable").find(".musicplayer_scrubber"),b=new Audio(d);b.addEventListener("loadedmetadata",function(){var a=h(b.duration);j.text(a)}),b.addEventListener("canplay",function(){a.addClass("playable")}),b.addEventListener("timeupdate",function(){var a=b.duration,f=h(a),c=b.currentTime,d=h(c);i.text(d),d==f&&e.removeClass("playing").addClass("paused"),k.css("left",100*(c/a)+"%")}),e.click(function(){!1==b.paused?(e.removeClass("playing").addClass("paused"),b.pause()):(e.removeClass("paused").addClass("playing"),b.play())}),g.click(function(d){var e=c(this).width(),a=(d.pageX-c(this).offset().left)/e;b.currentTime=a*b.duration,k.css("left",100*a+"%")}),f.each(function(){c(this).click(function(){b.currentTime=0})})}(jQuery)
