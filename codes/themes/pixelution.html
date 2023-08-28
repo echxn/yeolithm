@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+
+
+<!--  
+    ==========================================================
+ 
+ 
+    PIXELUTION THEME
+        
+    Version: 1.0
+    Released: August 2023
+    Created by: yeoli-thm
+    Website: https://yeolithm.com/    
+    Support: https://yeolithm.com/contact
+         
+         
+    ==========================================================
+-->
+    
+
+{block:Options}
+<meta name="image:Background image" content="">
+<meta name="image:Sidebar image" content="">
+
+<meta name="color:Background" content="#f9eedd">
+<meta name="color:Borders" content="#839c99">
+<meta name="color:Box shadows" content="#efd2c4">
+<meta name="color:Body text" content="#839c99">
+<meta name="color:Bold text" content="#8c8499">
+<meta name="color:Italic text" content="#d6aeb0">
+<meta name="color:Headings" content="#588885">
+<meta name="color:Links" content="#222222">
+<meta name="color:Links hover" content="#efac9a">
+<meta name="color:Bullet points" content="#588885">
+<meta name="color:Blockquote borders" content="#588885">
+<meta name="color:Accent 1 bg" content="#cdd8c4">
+<meta name="color:Accent 1 text" content="#839c99">
+<meta name="color:Accent 2 bg" content="#9bbfcb">
+<meta name="color:Accent 2 text" content="#ffffff">
+<meta name="color:Post bg" content="#ffffff">
+<meta name="color:Post usernames bg" content="#fff0cd">
+<meta name="color:Post usernames text" content="#839c99">
+<meta name="color:Post audio player bg" content="#282828">
+<meta name="color:Post audio player text" content="#ffffff">
+<meta name="color:Post links overlay" content="#282828">
+<meta name="color:Post links overlay text" content="#ffffff">
+<meta name="color:Post poll bg" content="#fbccb1">
+<meta name="color:Post poll text" content="#588885">
+<meta name="color:Post pinned label" content="#c8e0e8">
+<meta name="color:Post pinned text" content="#839c99">
+<meta name="color:Sidebar image text" content="#839c99">
+<meta name="color:Sidebar blog title" content="#839c99">
+<meta name="color:Text selection" content="#ffffff">
+<meta name="color:Text selection bg" content="#fbccb1">
+<meta name="color:Scrollbar" content="#839c99">
+
+<meta name="select:Body font family" title="Share Tech Mono" content="Share Tech Mono">
+<meta name="select:Body font family" title="Ubuntu Mono" content="Ubuntu Mono">
+<meta name="select:Body font family" title="PT Sans" content="PT Sans">
+<meta name="select:Body font family" title="Source Sans Pro" content="Source Sans Pro">
+
+<meta name="select:Body font size" title="12px" content="12px">
+<meta name="select:Body font size" title="13px" content="13px">
+<meta name="select:Body font size" title="14px" content="14px">
+<meta name="select:Body font size" title="15px" content="15px">
+
+<meta name="select:Theme shape" title="heart" content="heart">
+<meta name="select:Theme shape" title="circle" content="circle">
+
+<meta name="select:Sidebar position" title="left" content="left">
+<meta name="select:Sidebar position" title="right" content="right">
+
+<meta name="select:Sidebar text align" title="center" content="center">
+<meta name="select:Sidebar text align" title="left" content="left">
+<meta name="select:Sidebar text align" title="right" content="right">
+
+<meta name="select:Sidebar info display" title="bio & menu" content="bothdisplay">
+<meta name="select:Sidebar info display" title="bio only" content="biodisplay">
+<meta name="select:Sidebar info display" title="menu only" content="menudisplay">
+<meta name="select:Sidebar info display" title="none" content="nonedisplay">
+
+<meta name="select:Pagination display" title="message box" content="mssg">
+<meta name="select:Pagination display" title="classic" content="clsc">
+
+<meta name="if:Enable custom scrollbar" content="1">
+<meta name="if:Show box shadows" content="1">
+<meta name="if:Show blog title" content="1">
+<meta name="if:Show post notes tab" content="1">
+<meta name="if:Underline text links" content="1">
+
+<meta name="text:Sidebar image text" content="imagine">
+
+<meta name="text:Sidebar margin top" content="80px">
+
+<meta name="text:Custom link 1 label" content="Link 1">
+<meta name="text:Custom link 1 URL" content="URL">
+<meta name="text:Custom link 2 label" content="Link 2">
+<meta name="text:Custom link 2 URL" content="URL">
+<meta name="text:Custom link 3 label" content="Link 3">
+<meta name="text:Custom link 3 URL" content="URL">
+{/block:Options}
+
+
+<html lang="{block:English}en-US{/block:English}{block:German}de-DE{/block:German}{block:French}fr-FR{/block:French}{block:Italian}it-IT{/block:Italian}{block:Japanese}ja-JP{/block:Japanese}{block:Turkish}tr-TR{/block:Turkish}{block:Spanish}es-ES{/block:Spanish}{block:Russian}ru-RU{/block:Russian}{block:Polish}pl-PL{/block:Polish}{block:PortuguesePT}pt-PT{/block:PortuguesePT}{block:PortugueseBR}pt-BR{/block:PortugueseBR}{block:Dutch}nl-NL{/block:Dutch}{block:Korean}ko-KR{/block:Korean}{block:ChineseSimplified}zh-CN{/block:ChineseSimplified}{block:ChineseTraditional}zh-TW{/block:ChineseTraditional}{block:ChineseHK}zh-HK{/block:ChineseHK}{block:Indonesian}id-ID{/block:Indonesian}{block:Hindi}hi-IN{/block:Hindi}">
+
+
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{Title}{block:PostSummary}: {PostSummary}{/block:PostSummary}{block:SearchPage}: {lang:SearchResultCount results for SearchQuery}{block:NoSearchResults}{lang:No results found}{/block:NoSearchResults}{/block:SearchPage}{block:TagPage}: {lang:Posts tagged Tag}{/block:TagPage}{block:DayPage}: {lang:Viewing everything posted on Month DayOfMonth Year}{/block:DayPage}</title>
+    <link rel="shortcut icon" href="{Favicon}">
+    <meta name="description" content="{MetaDescription}">
+    <meta name="theme-color" content="{BackgroundColor}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    
+    <link href="https://fonts.cdnfonts.com/css/share-techmono-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/share-tech-mono" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/ubuntu-mono" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/pt-sans" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/source-sans-pro" rel="stylesheet">
+    
+    <link href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css' rel='stylesheet'>
+    <link href="https://static.tumblr.com/kmw8hta/p0jpgtbdt/tooltipster_main.css" rel="stylesheet">
+    <link href="https://static.tumblr.com/o7wk3y7/WYrs02l8k/main.min.css" rel="stylesheet">
+    
+    <script>
+        document.write('<style>.audio-caption{opacity:0}.audio-caption+audio{display:none!important}</style>');
+    </script>
+    
+    {NewPostStyles}
+    
+    <!-- HTML5 Shiv -->
+    <!--[if lt IE 9]>
+        <script src="https://static.tumblr.com/hriofhd/Qj0m8pn7q/html5shiv.js"></script>
+    <![endif]-->
+        
+
+    <style>
+    
+    
+    @import url('https://fonts.cdnfonts.com/css/share-techmono-2');
+    @import url('https://fonts.cdnfonts.com/css/share-tech-mono');
+    @import url('https://fonts.cdnfonts.com/css/ubuntu-mono');
+    @import url('https://fonts.cdnfonts.com/css/pt-sans');
+    @import url('https://fonts.cdnfonts.com/css/source-sans-pro');
+        
+    
+    
+    :root {
+        
+        
+    /*  FONT STYLING:  */
+        {block:IfUnderlineTextLinks}--textLinksDecoration: underline;{/block:IfUnderlineTextLinks}
+        {block:IfNotUnderlineTextLinks}--textLinksDecoration: none;{/block:IfNotUnderlineTextLinks}
+        --bodyFontFamily: '{select:Body font family}', 'Calibri', sans-serif;
+        --bodyFontSize: {select:Body font size};
+        --monospaceFontFamily: 'Share-TechMono', monospace;
+        
+        
+    /*  COLORS (in rgb values format):  */
+        --accent1BgColor: {RGBcolor:Accent 1 bg};
+        --accent1TextColor: {RGBcolor:Accent 1 text};
+        --accent2BgColor: {RGBcolor:Accent 2 bg};
+        --accent2TextColor: {RGBcolor:Accent 2 text};
+        --backgroundColor: {RGBcolor:Background};
+        --bordersColor: {RGBcolor:Borders};
+        --boxShadowsColor: {RGBcolor:Box shadows};
+        --bodyTextColor: {RGBcolor:Body text};
+        --boldTextColor: {RGBcolor:Bold text};
+        --italicTextColor: {RGBcolor:Italic text};
+        --headingsColor: {RGBcolor:Headings};
+        --linksColor: {RGBcolor:Links};
+        --linksHoverColor: {RGBcolor:Links hover};
+        --bulletPointsColor: {RGBcolor:Bullet points};
+        --blockquoteBordersColor: {RGBcolor:Blockquote borders};
+        --postBgColor: {RGBcolor:Post bg};
+        --postAudioPlayerBgColor: {RGBcolor:Post audio player bg};
+        --postAudioPlayerTextColor: {RGBcolor:Post audio player text};
+        --postLinksOverlayColor: {RGBcolor:Post links overlay};
+        --postLinksOverlayTextColor: {RGBcolor:Post links overlay text};
+        --postPollBgColor: {RGBcolor:Post poll bg};
+        --postPollTextColor: {RGBcolor:Post poll text};
+        --postPinnedLabelColor: {RGBcolor:Post pinned label};
+        --postPinnedTextColor: {RGBcolor:Post pinned text};
+        --postUsernamesBgColor: {RGBcolor:Post usernames bg};
+        --postUsernamesTextColor: {RGBcolor:Post usernames text};
+        --sidebarImageTextColor: {RGBcolor:Sidebar image text};
+        --sidebarBlogTitleColor: {RGBcolor:Sidebar blog title};
+        --textSelectionColor: {RGBcolor:Text selection};
+        --textSelectionBgColor: {RGBcolor:Text selection bg};
+        --scrollbarColor: {RGBcolor:Scrollbar};
+        
+        
+    /*  POST SIZE:  */
+        --postWidth: 540px;
+        --postMargin: 80px;
+        
+        
+    /*  SIDEBAR:  */
+        --sidebarImageText: {text:Sidebar image text};
+        --sidebarMarginTop: {text:Sidebar margin top};
+        
+        
+    }
+    
+    
+    
+    body {
+    /*  BACKGROUND IMAGE:  */
+        background-image: url('{image:Background image}');
+        background-attachment: fixed;
+        background-position: 0 0;
+        background-repeat: repeat;
+        background-size: auto;
+    }
+    
+    
+    
+    /*  CUSTOM SCROLLBAR:  */
+    {block:IfEnableCustomScrollbar}
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    ::-webkit-scrollbar-track,
+    ::-webkit-scrollbar-corner {
+        --scrollbarBg: inherit;
+        background-color: var(--scrollbarBg);
+    }
+    body::-webkit-scrollbar-track,
+    body::-webkit-scrollbar-corner { 
+        --scrollbarBg: rgb(var(--backgroundColor));
+    }
+    ::-webkit-scrollbar-thumb {
+        min-width: 24px;
+        min-height: 24px;
+        border-radius: 6px;
+        background-color: rgb(var(--scrollbarColor));
+    }
+    {/block:IfEnableCustomScrollbar}
+
+
+
+    /*  POST TABS (do not edit):  */
+    .tbutton-wrapper label {
+        --tabBgColor: rgb(var(--accent2BgColor));
+        color: rgb(var(--accent2TextColor));
+    }
+    {block:Posts}input[id="maintab_{PostID}"]:checked ~ .tbutton-wrapper label.maintab_button,{/block:Posts}
+    {block:Posts}input[id="infotab_{PostID}"]:checked ~ .tbutton-wrapper label.infotab_button,{/block:Posts}
+    {block:Posts}input[id="notetab_{PostID}"]:checked ~ .tbutton-wrapper label.notetab_button,{/block:Posts}
+    input[id="maintab_0"]:checked ~ .tbutton-wrapper label.maintab_button {
+        --tabBgColor: rgb(var(--accent1BgColor));
+        color: rgb(var(--accent1TextColor));
+        cursor: default;
+        z-index: 5;
+    }
+    {block:Posts}input[id="maintab_{PostID}"]:checked ~ .tbody-wrapper .maintab-section,{/block:Posts}
+    {block:Posts}input[id="infotab_{PostID}"]:checked ~ .tbody-wrapper .infotab-section,{/block:Posts}
+    {block:Posts}input[id="notetab_{PostID}"]:checked ~ .tbody-wrapper .notetab-section,{/block:Posts}
+    input[id="maintab_0"]:checked ~ .tbody-wrapper .maintab-section {
+        display: block;
+    }
+
+
+    
+    {CustomCSS}
+    </style>
+</head>
+<body class="{block:IfShowBoxShadows} has--boxshadow{/block:IfShowBoxShadows}" data-shape="{select:Theme shape}" data-body-font-family="{select:Body font family}" data-body-font-size="{select:Body font size}" data-sidebar-position="{select:Sidebar position}" data-pagination-display="{select:Pagination display}">
+    
+    
+    
+    
+    <!-- SVG SHAPES: -->
+    <svg width="0" height="0">
+        <defs>
+            <clipPath id="heartClipPath" clipPathUnits="objectBoundingBox" viewBox="0 0 1 1">
+                <path d="M0.696,0.059c0.167,0,0.28,0.164,0.28,0.317c0,0.311-0.467,0.564-0.475,0.564 c-0.009,0-0.476-0.254-0.476-0.564c0-0.153,0.113-0.317,0.28-0.317c0.096,0,0.159,0.05,0.195,0.094 C0.537,0.109,0.6,0.059,0.696,0.059z"/>
+            </clipPath>
+        </defs>
+        <symbol>
+            <path id="heartClipPathBorder" d="M139.081,11.801c33.48,0,55.979,32.854,55.979,63.503c0,62.073-93.369,112.896-95.061,112.896 c-1.688,0-95.06-50.823-95.06-112.896c0-30.649,22.497-63.503,55.981-63.503c19.222,0,31.791,10.032,39.079,18.854 C107.288,21.833,119.856,11.801,139.081,11.801z"/>
+            <path id="heartLinePath" d="M102.001,161.377c-0.277,0-0.548-0.145-0.695-0.402c-0.22-0.384-0.087-0.872,0.297-1.092 c2.014-1.152,4.438-2.638,7.411-4.542c5.978-3.829,15.042-10.088,24.284-18.155c4.167-3.638,8.05-7.368,11.539-11.09 c0.304-0.322,0.81-0.338,1.131-0.037c0.322,0.303,0.339,0.809,0.037,1.131c-3.526,3.761-7.447,7.529-11.654,11.201 c-9.316,8.132-18.451,14.438-24.474,18.298c-2.996,1.918-5.442,3.417-7.479,4.583C102.272,161.343,102.136,161.377,102.001,161.377z M157.126,113.59c9.495-13.568,14.309-27.146,14.309-40.354c0-4.816-0.637-9.722-1.892-14.582c-0.11-0.427-0.548-0.687-0.975-0.574 c-0.428,0.11-0.685,0.547-0.574,0.975c1.222,4.729,1.841,9.5,1.841,14.182c0,12.873-4.717,26.142-14.02,39.436 c-0.254,0.362-0.165,0.861,0.196,1.114c0.14,0.098,0.3,0.145,0.458,0.145C156.723,113.931,156.971,113.812,157.126,113.59z M150.601,124.619c-0.64-3.452-0.599-3.494-4.196-4.217c-0.227-0.041-0.393-0.187-0.393-0.435s0.166-0.393,0.393-0.434 c3.598-0.724,3.474-0.807,4.196-4.218c0.062-0.227,0.187-0.372,0.435-0.372s0.372,0.146,0.434,0.372 c0.724,3.411,0.62,3.494,4.197,4.218c0.247,0.041,0.393,0.186,0.393,0.434s-0.146,0.394-0.393,0.435 c-3.598,0.682-3.557,0.765-4.197,4.217c-0.062,0.228-0.186,0.372-0.434,0.372S150.662,124.847,150.601,124.619z"/>
+            <path id="heartTextPath" d="M85.6,162.008 c-2.297-0.991-5.876-2.975-12.095-6.941c-6.015-3.836-15.141-10.109-24.465-18.211C24.874,115.859,12.1,93.558,12.1,72.36 C12.1,45.625,32.186,17,62.087,17c5.594,0,11.174,0.951,16.392,2.979c8.388,3.261,14.632,3.265,22.905,0.044 C106.651,17.975,112.268,17,117.915,17c19.693,0,35.13,12.418,43.372,28.535"/>
+            <path id="circleLinePath" d="M155.32,135.793c-11.637,16.552-28.864,27.996-48.507,32.226c-0.057,0.012-0.113,0.018-0.169,0.018 c-0.368,0-0.7-0.256-0.781-0.632c-0.093-0.432,0.182-0.857,0.614-0.95c19.247-4.145,36.129-15.36,47.534-31.581 c0.254-0.361,0.755-0.448,1.114-0.194C155.487,134.933,155.574,135.432,155.32,135.793z M164.257,60.771 c-0.161-0.411-0.625-0.612-1.038-0.45c-0.411,0.163-0.612,0.627-0.45,1.038c3.604,9.124,5.432,18.76,5.432,28.641 c0,10.029-1.881,19.801-5.59,29.043c-0.165,0.41,0.034,0.876,0.444,1.04c0.098,0.039,0.198,0.058,0.298,0.058 c0.316,0,0.617-0.189,0.742-0.502c3.786-9.433,5.705-19.404,5.705-29.639C169.8,79.917,167.935,70.083,164.257,60.771z M159.599,132.641c0.248-0.003,0.371-0.148,0.431-0.376c0.604-3.459,0.563-3.542,4.154-4.26c0.245-0.044,0.39-0.189,0.388-0.438 c-0.003-0.249-0.149-0.393-0.396-0.432c-3.584-0.687-3.482-0.771-4.24-4.174c-0.063-0.227-0.188-0.37-0.437-0.368 c-0.249,0.004-0.372,0.149-0.432,0.376c-0.688,3.418-0.563,3.5-4.153,4.26c-0.227,0.044-0.391,0.189-0.389,0.438 c0.004,0.248,0.17,0.392,0.396,0.431c3.604,0.688,3.564,0.729,4.24,4.175C159.224,132.5,159.35,132.643,159.599,132.641z"/>
+            <path id="circleTextPath" d="M90,166c-41.906,0-76-34.093-76-76 c0-41.906,34.094-76,76-76c27.191,0,51.092,14.353,64.524,35.88"/>
+        </symbol>
+        <symbol id="playButton" viewBox="0 0 24 24">
+            <path d="M3.947,20.834V3.166l16.105,8.833L3.947,20.834L3.947,20.834z"/>
+        </symbol>
+        <symbol id="pauseButton" viewBox="0 0 24 24">
+            <path d="M3.897,3.6h6.569v16.8H3.897V3.6z M13.534,3.6h6.568v16.8h-6.568V3.6z"/>
+        </symbol>
+    </svg>
+    <!-- end of svg shapes -->
+    
+    
+    
+    
+    <div id="container">
+    
+    
+    
+    
+        <!-- SIDEBAR: -->
+        <aside id="sidebar" style="text-align:{select:Sidebar text align}">
+            
+            <!-- Sidebar image: -->
+            <div id="sb-image">
+                <svg id="svg_{select:Theme shape}_text" viewBox="0 0 180 180"><text><textPath xlink:href="#{select:Theme shape}TextPath" id="{select:Theme shape}text"></textPath></text></svg>
+                <svg id="svg_{select:Theme shape}_line" viewBox="0 0 180 180"><use xlink:href="#{select:Theme shape}LinePath"/></svg>
+                <svg id="svg_{select:Theme shape}_border" viewBox="0 0 200 200"><use xlink:href="#heartClipPathBorder"/></svg>
+                <a href="/" class="sbimage"><img src="{image:Sidebar image}" alt="Sidebar image"/></a>
+            </div>
+            <!---->
+            
+            {block:IfShowBlogTitle}
+            <!-- Blog title: -->
+            <div id="sb-title">
+                <div class="title-text"><b>{Title}</b></div>
+                <div class="title-tail"></div>
+            </div>
+            <!---->
+            {/block:IfShowBlogTitle}
+            
+            <!-- Info box: -->
+            <div id="sb-infobox" class="{select:Sidebar info display}{block:Description} has--desc{/block:Description}">
+                <input type="checkbox" id="menutoggle" name="menutoggle"/>
+                <div class="ib-toolbar">
+                    <a href="/" class="home_button" title="home">
+                        <i class="fi fi-rr-home"></i>
+                    </a>
+                    {block:AskEnabled}
+                    <a href="/ask" class="mail_button" title="ask">
+                        <i class="fi fi-rr-envelope"></i>
+                    </a>
+                    {/block:AskEnabled}
+                    <form action="/search" method="get" id="searchbar"{block:HideFromSearchEnabled} style="display:none"{/block:HideFromSearchEnabled}>
+                        <input type="text" name="q" value="{SearchQuery}" class="searchquery" placeholder="{lang:Search}.."/>
+                    </form>
+                    <label for="menutoggle" class="menu_button" title="menu">
+                        <i class="fi fi-rr-menu-burger"></i>
+                        <i class="fi fi-rr-user"></i>
+                    </label>
+                </div>
+                {block:Description}
+                <!-- Description: -->
+                <div id="desc">
+                    <div class="desc-inner">{Description}</div>
+                </div>
+                <!---->
+                {/block:Description}
+                <!-- Menu links: -->
+                <nav id="menu">
+                    <a href="/">archive</a>
+                    {block:SubmissionsEnabled}<a href="/submit">{SubmitLabel}</a>{/block:SubmissionsEnabled}
+                    {block:IfCustomLink1Label}<a href="{text:Custom link 1 URL}">{text:Custom link 1 label}</a>{/block:IfCustomLink1Label}
+                    {block:IfCustomLink2Label}<a href="{text:Custom link 2 URL}">{text:Custom link 2 label}</a>{/block:IfCustomLink2Label}
+                    {block:IfCustomLink3Label}<a href="{text:Custom link 3 URL}">{text:Custom link 3 label}</a>{/block:IfCustomLink3Label}
+                    {block:HasPages}
+                    {block:Pages}<a href="{URL}">{Label}</a>{/block:Pages}
+                    {/block:HasPages}
+                </nav>
+                <!---->
+            </div>
+            <!----> 
+            
+            {block:Pagination}
+            <!-- Sidebar pagination: -->
+            <div id="sb-pagination">
+                <div class="pg-head">
+                    <i class="fi fi-rr-transporter-empty"></i>
+                    <i class="fi fi-rr-square"></i>
+                    <i class="fi fi-rr-cross"></i>
+                </div>
+                <div class="pg-body">
+                    <div class="pg-message">Do you wish to continue?</div>
+                    <div class="pg-select">
+                        <a{block:PreviousPage} href="{PreviousPage}" class="has--page"{/block:PreviousPage}>no</a>
+                        <a{block:NextPage} href="{NextPage}" class="has--page"{/block:NextPage}>yes</a>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            {/block:Pagination}
+            
+        </aside>
+        <!-- end of sidebar -->
+        
+        
+        
+        
+        <!-- MAIN BODY: -->
+        <div id="main-body-wrapper">
+        
+            <!-- Blog posts: -->
+            <main>
+                {block:Posts inlineMediaWidth="1280" inlineNestedMediaWidth="1280"}
+                    <article class="{PostType} post"{block:Date} id="{PostID}"{/block:Date}{block:IndexPage}{block:NoteCount} data-notesURL="{PostNotesURL}"{/block:NoteCount}{/block:IndexPage}>
+                        {block:Date}
+                        {block:NoteCount}<input type="radio" id="notetab_{PostID}" name="posttab_{PostID}"/>{/block:NoteCount}
+                        <input type="radio" id="infotab_{PostID}" name="posttab_{PostID}"/>
+                        {/block:Date}
+                        <input type="radio" id="maintab_{PostID}" name="posttab_{PostID}" checked/>
+                        <div class="tbutton-wrapper">
+                            {block:Date}
+                            {block:NoteCount}
+                            <label for="notetab_{PostID}" class="notetab_button"{block:IndexPage}{block:IfNotShowPostNotesTab} style="display:none"{/block:IfNotShowPostNotesTab}{/block:IndexPage}>
+                                <span>notes</span>
+                            </label>
+                            {/block:NoteCount}
+                            <label for="infotab_{PostID}" class="infotab_button">
+                                <span>info</span>
+                            </label>
+                            {/block:Date}
+                            <label for="maintab_{PostID}" class="maintab_button">
+                                {block:Date}<span class="date">{DayOfMonthWithZero}·{MonthNumberWithZero}·{ShortYear}</span>{/block:Date}
+                                <span{block:Date} style="display:none"{/block:Date}>xxx</span>
+                            </label>
+                        </div>
+                        <div class="tbody-wrapper">
+                            <section class="maintab-section">
+                                <ul class="trail-block">
+                                    {block:Date}
+                                        {block:NotReblog}
+                                            <li class="trail-attribution{block:PinnedPostLabel} is--pinned{/block:PinnedPostLabel}">
+                                                <div class="attr-author-portrait"{block:Answer} style="display:none"{/block:Answer}>
+                                                    <img src="{PostAuthorPortraitURL-64}" aria-hidden="true"/>
+                                                </div>
+                                                <div class="attr-author-name"{block:Answer} style="display:none"{/block:Answer}>
+                                                    <a href="{Permalink}">{PostAuthorName}</a>
+                                                </div>
+                                                {block:PinnedPostLabel}
+                                                <div class="attr-pinned">
+                                                    <i class="fi fi-rr-thumbtack"></i>
+                                                    <span>pinned</span>
+                                                </div>
+                                                {/block:PinnedPostLabel}
+                                            </li>
+                                        {/block:NotReblog}
+                                        {block:RebloggedFrom}
+                                            <li class="trail-attribution{block:PinnedPostLabel} is--pinned{/block:PinnedPostLabel}">
+                                                <div class="attr-author-portrait"{block:Answer} style="display:none"{/block:Answer}>
+                                                    <img src="{ReblogRootPortraitURL-64}" aria-hidden="true"/>
+                                                </div>
+                                                <div class="attr-author-name"{block:Answer} style="display:none"{/block:Answer}>
+                                                    <a href="{ReblogRootURL}" {Target} class="post-author-name">{ReblogRootName}</a>
+                                                </div>
+                                                {block:PinnedPostLabel}
+                                                <div class="attr-pinned">
+                                                    <i class="fi fi-rr-thumbtack"></i>
+                                                    <span>pinned</span>
+                                                </div>
+                                                {/block:PinnedPostLabel}
+                                            </li>
+                                        {/block:RebloggedFrom}
+                                    {/block:Date}
+                                    {block:Text}
+                                        <li class="trail-content">
+                                            <div class="entry">
+                                                {block:Title}<h2>{Title}</h2>{/block:Title}
+                                                {block:NotReblog}{Body}{/block:NotReblog}
+                                                {block:Reblogs}{block:isOriginalEntry}{Body}{/block:isOriginalEntry}{/block:Reblogs}
+                                            </div>
+                                        </li>
+                                    {/block:Text}
+                                    {block:Photo}
+                                        <li class="trail-content">
+                                            <figure class="entry">
+                                                <a class="post_media_photo_anchor" data-big-photo="{PhotoURL-HighRes}" data-big-photo-height="{PhotoHeight-HighRes}" data-big-photo-width="{PhotoWidth-HighRes}">
+                                                    <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" style="display:block;width:100%"/>
+                                                </a>
+                                            </figure>
+                                            {block:Caption}
+                                                <div class="entry">
+                                                    {block:NotReblog}{Caption}{/block:NotReblog}
+                                                    {block:RebloggedFrom}{block:Reblogs}{block:isOriginalEntry}{Body}{/block:isOriginalEntry}{/block:Reblogs}{/block:RebloggedFrom}
+                                                </div>
+                                            {/block:Caption}
+                                        </li>
+                                    {/block:Photo}
+                                    {block:Panorama}
+                                        <li class="trail-content">
+                                            <figure class="entry">
+                                                {LinkOpenTag}<img src="{PhotoURL-Panorama}" style="display:block;width:100%" alt="{PhotoAlt}"/>{LinkCloseTag}
+                                            </figure>
+                                            {block:Caption}
+                                                <div class="entry">
+                                                    {block:NotReblog}{Caption}{/block:NotReblog}
+                                                    {block:RebloggedFrom}{block:Reblogs}{block:isOriginalEntry}{Body}{/block:isOriginalEntry}{/block:Reblogs}{/block:RebloggedFrom}
+                                                </div>
+                                            {/block:Caption}
+                                        </li>
+                                    {/block:Panorama}
+                                    {block:Photoset}
+                                        <li class="trail-content">
+                                            <figure class="entry">
+                                                <div class="clearfix">
+                                                    <div class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">
+                                                        {block:Photos}
+                                                            <div class="photo-data">
+                                                                <div class="pxu-photo">
+                                                                    <img src="{PhotoURL-500}" alt="{PhotoAlt}" width="{PhotoWidth-500}" height="{PhotoHeight-500}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}"/>
+                                                                </div>
+                                                                <a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}"></a>
+                                                            </div>
+                                                        {/block:Photos}
+                                                    </div>
+                                                </div>
+                                            </figure>
+                                            {block:Caption}
+                                                <div class="entry">
+                                                    {block:NotReblog}{Caption}{/block:NotReblog}
+                                                    {block:RebloggedFrom}{block:Reblogs}{block:isOriginalEntry}{Body}{/block:isOriginalEntry}{/block:Reblogs}{/block:RebloggedFrom}
+                                                </div>
+                                            {/block:Caption}
+                                        </li>
+                                    {/block:Photoset}
+                                    {block:Video}
+                                        <li class="trail-content">
+                                            <figure class="entry">
+                                                <div class="tmblr-embed">
+                                                    {VideoEmbed-500}
+                                                </div>
+                                            </figure>
+                                            {block:Caption}
+                                                <div class="entry">
+                                                    {block:NotReblog}{Caption}{/block:NotReblog}
+                                                    {block:RebloggedFrom}{block:Reblogs}{block:isOriginalEntry}{Body}{/block:isOriginalEntry}{/block:Reblogs}{/block:RebloggedFrom}
+                                                </div>
+                                            {/block:Caption}
+                                        </li>
+                                    {/block:Video}
+                                    {block:Quote}
+                                        <li class="trail-content">
+                                            <div class="entry">
+                                                <p class="npf_quote">{Quote}</p>
+                                                {block:Source}
+                                                {block:NotReblog}<p>{Source}</p>{block:NotReblog}
+                                                {block:RebloggedFrom}{block:Reblogs}{block:isOriginalEntry}<p>{Body}</p>{/block:isOriginalEntry}{/block:Reblogs}{/block:RebloggedFrom}
+                                                {/block:Source}
+                                            </div>
+                                        </li>
+                                    {/block:Quote}
+                                    {block:Link}
+                                        <li class="trail-content">
+                                            <div class="entry">
+                                                <div class="npf-link-block{block:Thumbnail} has-poster{/block:Thumbnail}">
+                                                    <a href="{URL}" {Target}>
+                                                        {block:Thumbnail}<div class="poster" style="background-image:url({Thumbnail-HighRes})">{/block:Thumbnail}
+                                                            <div class="title">{Name}</div>
+                                                        {block:Thumbnail}</div>{/block:Thumbnail}
+                                                        <div class="bottom">
+                                                            {block:Excerpt}<div class="descriptiion">{Excerpt}</div>{/block:Excerpt}
+                                                            {block:Host}<div class="site-name">{Host}</div>{/block:Host}
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                {block:Description}
+                                                    {block:NotReblog}{Body}{/block:NotReblog}
+                                                    {block:Reblogs}{block:isOriginalEntry}{Body}{/block:isOriginalEntry}{/block:Reblogs}
+                                                {/block:Description}
+                                            </div>
+                                        </li>
+                                    {/block:Link}
+                                    {block:Chat}
+                                        <li class="trail-content">
+                                            <div class="entry">
+                                                {block:Title}<h2>{Title}</h2>{/block:Title}
+                                                <p class="npf_chat">
+                                                    {block:Lines}
+                                                        {block:Label}<b>{Label}</b> {/block:Label}{Line}
+                                                        <br>
+                                                    {block:Lines}
+                                                </p>
+                                            </div>
+                                        </li>
+                                    {/block:Chat}
+                                    {block:Audio}
+                                        <li class="trail-content">
+                                            <div class="entry">
+                                                {block:AudioEmbed}
+                                                    <div class="tmblr-embed">{AudioEmbed}</div>
+                                                {/block:AudioEmbed}
+                                                {block:AudioPlayer}
+                                                    <div class="audio-wrapper{block:AlbumArt} has--cover{/block:AlbumArt}"{block:AlbumArt} style="background-image: url({AlbumArtURL})"{/block:AlbumArt}>
+                                                        <div class="audioinfo">
+                                                            {block:TrackName}<span class="trackname">{TrackName}</span>{/block:TrackName}
+                                                            {block:Artist}<span class="trackartist">{Artist}</span>{/block:Artist}
+                                                        </div>
+                                                        {block:AlbumArt}<img class="albumart" src="{AlbumArtURL}" alt=""/>{/block:AlbumArt}
+                                                        <div class="nativebutton">
+                                                            {AudioPlayer}
+                                                        </div>
+                                                    </div>
+                                                {/block:AudioPlayer}
+                                            </div>
+                                        </li>
+                                    {/block:Audio}
+                                    {block:Answer}
+                                        <li class="trail-content-answer">
+                                            <div class="answer-author-portrait">
+                                                <img src="{AskerPortraitURL-64}"/>
+                                                <div class="answer-arrow"></div>
+                                            </div>
+                                            <div class="answer-username">sent by {Asker}</div>
+                                            <div class="entry">{Question}</div>
+                                        </li>
+                                        {block:NotReblog}
+                                        <li class="trail-content-answer">
+                                            <div class="answer-author-portrait">
+                                                <img src="{PostAuthorPortraitURL-64}"/>
+                                                <div class="answer-arrow"></div>
+                                            </div>
+                                            <div class="answer-username">answered by {PostAuthorName}</div>
+                                            <div class="entry">{Answer}</div>
+                                        </li>
+                                        {/block:NotReblog}
+                                        {block:Answerer}
+                                        <li class="trail-content-answer">
+                                            <div class="answer-author-portrait">
+                                                <img src="{AnswererPortraitURL-64}"/>
+                                                <div class="answer-arrow"></div>
+                                            </div>
+                                            <div class="answer-username">answered by {Answerer}</div>
+                                            <div class="entry">{Answer}</div>
+                                        </li>
+                                        {/block:Answerer}
+                                    {/block:Answer}
+                                </ul>
+                                {block:RebloggedFrom}{block:Reblogs}
+                                    <ul class="trail-block"{block:isOriginalEntry} style="display:none"{/block:isOriginalEntry}>
+                                        <li class="trail-attribution">
+                                            <div class="attr-author-portrait">
+                                                {block:HasAvatar}<img src="{PortraitURL-64}" aria-hidden="true"/>{/block:HasAvatar}
+                                            </div>
+                                            <div class="attr-author-name">
+                                                <a{block:HasPermalink} href="{Permalink}" {Target}{/block:HasPermalink} class="post-author-name">{Username}{block:IsDeactivated}-deactivated{/block:IsDeactivated}</a>
+                                            </div>
+                                        </li>
+                                        <li class="trail-content">
+                                            <div class="entry">{Body}</div>
+                                        </li>
+                                    </ul>
+                                {/block:Reblogs}{/block:RebloggedFrom}
+                            </section>
+                            {block:Date}
+                                <section class="infotab-section">
+                                    <ul class="info-block resetlist">
+                                        <li>
+                                            <div class="info-label"><span>posted</span></div>
+                                            <div class="info-entry"><a href="{Permalink}">{TimeAgo}</a></div>
+                                        </li>
+                                        {block:RebloggedFrom}
+                                        <li>
+                                            <div class="info-label"><span>via</span></div>
+                                            <div class="info-entry"><a href="{ReblogParentURL}" {Target}>{ReblogParentName}</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="info-label"><span>origin</span></div>
+                                            <div class="info-entry"><a href="{ReblogRootURL}" {Target}>{ReblogRootName}</a></div>
+                                        </li>
+                                        {/block:RebloggedFrom}
+                                        {block:HighRes}{block:Photo}
+                                        <li>
+                                            <div class="info-label"><span>high-res</span></div>
+                                            <div class="info-entry"><a href="{PhotoURL-HighRes}" {Target}>view in high-res</a></div>
+                                        </li>
+                                        {/block:Photo}{/block:HighRes}
+                                        {block:ContentSource}
+                                        <li>
+                                            <div class="info-label"><span>source</span></div>
+                                            <div class="info-entry"><a href="{SourceURL}" {Target}>{SourceTitle}</a></div>
+                                        </li>
+                                        {/block:ContentSource}
+                                        {block:HasTags}
+                                        <li>
+                                            <div class="info-label"><span>tags</span></div>
+                                            <div class="info-entry tags">{block:Tags}<a href="{TagURL}">#{Tag}</a> {/block:Tags}</div>
+                                        </li>
+                                        {/block:HasTags}
+                                    </ul>
+                                </section>
+                                {block:NoteCount}
+                                    <section class="notetab-section"{block:IndexPage}{block:IfNotShowPostNotesTab} style="display:none"{/block:IfNotShowPostNotesTab}{/block:IndexPage}>
+                                        <div class="notes-wrapper">
+                                            {block:IndexPage}
+                                            <div class="notes-loading">Loading...</div>
+                                            <div class="ajax-notes"></div>
+                                            {/block:IndexPage}
+                                            {PostNotes-64}
+                                        </div>
+                                    </section>
+                                {/block:NoteCount}
+                                <ul class="permalink resetlist">
+                                    <li class="nc_button">
+                                        {block:IndexPage}<a href="{Permalink}">{NoteCountWithLabel}</a>{/block:IndexPage}
+                                        {block:PermalinkPage}<label{block:NoteCount} for="notetab_{PostID}"{/block:NoteCount}>{NoteCountWithLabel}</label>{/block:PermalinkPage}
+                                    </li>
+                                    <li class="rb_button">
+                                        <a href="{ReblogURL}" {Target}>reblog</a>
+                                    </li>
+                                    <li class="lk_button">
+                                        {LikeButton size="100"}
+                                        <span>like</span>
+                                        <span class="unlike">unlike</span>
+                                    </li>
+                                </ul>
+                            {/block:Date}
+                        </div>
+                    </article>
+                {/block:Posts}
+                {block:SearchPage}{block:NoSearchResults}
+                    <article class="post">
+                        <input type="radio" id="maintab_0" name="posttab_0" checked/>
+                        <div class="tbutton-wrapper">
+                            <label for="maintab_0" class="maintab_button">
+                                <span>search</span>
+                            </label>
+                        </div>
+                        <div class="tbody-wrapper">
+                            <section class="maintab-section">
+                                <ul class="trail-block">
+                                    <li class="trail-content">
+                                        <div class="entry">
+                                            <h2>{lang:Sorry no posts found}</h2>
+                                            <p>{lang:No search results for SearchQuery 2}</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </article>
+                {/block:NoSearchResults}{/block:SearchPage}
+                {block:NoPosts}
+                    <article class="post">
+                        <input type="radio" id="maintab_0" name="posttab_0" checked/>
+                        <div class="tbutton-wrapper">
+                            <label for="maintab_0" class="maintab_button">
+                                <span>xxx</span>
+                            </label>
+                        </div>
+                        <div class="tbody-wrapper">
+                            <section class="maintab-section">
+                                <ul class="trail-block">
+                                    <li class="trail-content">
+                                        <div class="entry">
+                                            <p>{lang:This Tumblr hasnt made any posts}</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </article>
+                {/block:NoPosts}
+            </main>
+            <!-- end of blog posts -->
+            
+            {block:Pagination}
+            <!-- Pagination: -->
+                <div id="mn-pagination">
+                    <a{block:PreviousPage} href="{PreviousPage}" class="has--page"{/block:PreviousPage}><i class="fi fi-rr-arrow-small-left"></i></a>
+                    {block:JumpPagination length="5"}
+                    {block:CurrentPage}<a class="current--page">{PageNumber}</a>{/block:CurrentPage}
+                    {block:JumpPage}<a href="{URL}" class="jump--page">{PageNumber}</a>{/block:JumpPage}
+                    {/block:JumpPagination}
+                    <a{block:NextPage} href="{NextPage}" class="has--page"{/block:NextPage}><i class="fi fi-rr-arrow-small-right"></i></a>
+                </div>
+            <!---->
+            {/block:Pagination}
+            
+            <!-- Theme credit: -->
+            <footer id="footer">
+                <div class="themecredit">
+                    <span style="font-family:'Arial',sans-serif">©</span> <script>document.write(new Date().getFullYear())</script> <a href="https://pixelution-theme.tumblr.com/" target="_blank">Pixelution Theme</a> by <a href="https://yeoli-thm.tumblr.com" target="_blank">yeoli-thm</a>.
+                </div>
+            </div>
+            <!---->
+            
+        </div>
+        <!-- end of main body -->
+        
+        
+        
+        
+    </div>
+    <!-- end of #container -->
+    
+    
+    
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://static.tumblr.com/kmw8hta/1WKpaiuda/tooltipster.main.min.js"></script>
+    <script src="https://static.tumblr.com/kmw8hta/heppglaoh/tooltipster-discovery.min.js"></script>
+    <script src="https://static.tumblr.com/kmw8hta/rVKpb21vn/pxuphotoset.min.js"></script>
+    <script src="https://static.tumblr.com/kmw8hta/YIDrzy6i8/pixelution.min.js"></script>
+    
+    
+    <!--   
+        ==========================================================
+        
+        
+        // Credits: 
+        
+        PXU Photoset Extended
+        - https://github.com/pixelunion/Extended-Tumblr-Photoset
+        - Copyright (c) 2013 Pixel Union
+        - Licensed under the MIT license
+        
+        Tooltipster 
+        - https://github.com/iamceege/tooltipster
+        - Copyright (c) 2012,2016 Caleb Jacob and Louis Ameline
+        - Licensed under the MIT license
+        
+        UIcons 
+        - https://www.flaticon.com/uicons
+        - Copyright (c) uicons from Flaticon
+        
+        
+        ==========================================================
+    --> 
+
+
+</body>
+</html>
